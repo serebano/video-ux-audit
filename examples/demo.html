@@ -1,0 +1,6 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Demo inbox</title>
+<style>body{font:16px system-ui;margin:0;display:grid;grid-template-columns:280px 1fr;height:100vh}aside{border-right:1px solid #ddd;padding:12px}main{padding:16px}input{width:100%;padding:8px}li{padding:10px;border-bottom:1px solid #eee;cursor:pointer;list-style:none}</style></head>
+<body><aside><input id="search" placeholder="Search conversations"><ul id="list"><li>Alex · Where is my order?</li><li>Sam · Refund please</li><li>Kim · Hello</li></ul></aside>
+<main id="thread"><h2>Select a conversation</h2></main>
+<script>document.querySelectorAll('li').forEach(li=>li.onclick=()=>{thread.innerHTML='<h2>'+li.textContent+'</h2><p>Message history…</p>'});
+search.oninput=()=>{const q=search.value.toLowerCase();document.querySelectorAll('li').forEach(li=>li.style.display=li.textContent.toLowerCase().split(' · ')[0].includes(q)?'':'none')}</script></body></html>

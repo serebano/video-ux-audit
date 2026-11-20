@@ -1,0 +1,20 @@
+[
+  {
+    "start": 1518,
+    "end": 4518,
+    "text": "I'm a support person. I want to find the customer who asked about an order.",
+    "kind": "note"
+  },
+  {
+    "start": 6826,
+    "end": 10326,
+    "text": "P1 · Search ignores message text: 'order' finds nothing",
+    "kind": "problem"
+  },
+  {
+    "start": 11135,
+    "end": 13135,
+    "text": "Opening the first conversation by hand instead.",
+    "kind": "note"
+  }
+]

@@ -1,0 +1,4 @@
+audit-out/
+**/frames/
+*.ffconcat
+.chrome-test/

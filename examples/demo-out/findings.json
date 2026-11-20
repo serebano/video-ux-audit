@@ -1,0 +1,15 @@
+[
+  {
+    "id": "DEMO-01",
+    "severity": "P1",
+    "title": "Search ignores message text: 'order' finds nothing",
+    "steps": "Type 'order' in Search",
+    "expected": "Alex's conversation (its message mentions an order)",
+    "actual": "Empty list; search matches names only",
+    "area": "list search filter",
+    "ux": "Search names AND message text; show 'No results for X' with a clear button",
+    "perf": "Search server-side with a text index; debounce 150 ms",
+    "videoAt": 6823,
+    "screenshot": "shots/DEMO-01.png"
+  }
+]
