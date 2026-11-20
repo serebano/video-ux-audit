@@ -1,18 +1,18 @@
 [
   {
     "step": "open file://examples/demo.html",
-    "wallMs": 1512,
+    "wallMs": 1511,
     "ttfb": 0,
-    "dcl": 9,
-    "load": 13,
+    "dcl": 6,
+    "load": 11,
     "lcp": null
   },
   {
-    "step": "click #search",
-    "ms": 158
+    "step": "click li:nth-child(2)",
+    "ms": 608
   },
   {
-    "step": "click li",
-    "ms": 154
+    "step": "click #search",
+    "ms": 155
   }
 ]

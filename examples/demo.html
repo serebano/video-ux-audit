@@ -3,4 +3,5 @@
 <body><aside><input id="search" placeholder="Search conversations"><ul id="list"><li>Alex · Where is my order?</li><li>Sam · Refund please</li><li>Kim · Hello</li></ul></aside>
 <main id="thread"><h2>Select a conversation</h2></main>
 <script>document.querySelectorAll('li').forEach(li=>li.onclick=()=>{thread.innerHTML='<h2>'+li.textContent+'</h2><p>Message history…</p>'});
+document.querySelectorAll('li')[1].addEventListener('click',()=>{fetch('https://httpbin.org/status/500').catch(()=>{});fetch('/missing-api.json').catch(()=>{});const t=Date.now();while(Date.now()-t<450){};undefinedFn()});
 search.oninput=()=>{const q=search.value.toLowerCase();document.querySelectorAll('li').forEach(li=>li.style.display=li.textContent.toLowerCase().split(' · ')[0].includes(q)?'':'none')}</script></body></html>

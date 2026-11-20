@@ -34,7 +34,22 @@ handlers.push(async (d) => {
   send('Page.screencastFrameAck', { sessionId: d.params.sessionId }).catch(() => {});
 });
 
-await send('Page.enable'); await send('Runtime.enable');
+await send('Page.enable'); await send('Runtime.enable'); await send('Log.enable'); await send('Network.enable');
+// Every console/network/perf event lands on the SAME clock as the frames (ms since t0).
+const events = []; const reqs = new Map(); const ev = (type, data) => events.push({ t: Date.now() - t0, type, ...data });
+handlers.push((d) => { const p = d.params || {};
+  switch (d.method) {
+    case 'Runtime.consoleAPICalled': ev('console', { level: p.type, text: (p.args || []).map((a) => a.value ?? a.description ?? '').join(' ').slice(0, 500) }); break;
+    case 'Runtime.exceptionThrown': ev('exception', { text: (p.exceptionDetails?.exception?.description || p.exceptionDetails?.text || '').slice(0, 800) }); break;
+    case 'Log.entryAdded': ev('log', { level: p.entry.level, source: p.entry.source, text: p.entry.text.slice(0, 500), url: p.entry.url }); break;
+    case 'Network.requestWillBeSent': reqs.set(p.requestId, { t: Date.now() - t0, url: p.request.url, method: p.request.method, kind: p.type }); break;
+    case 'Network.responseReceived': { const r = reqs.get(p.requestId); if (r) Object.assign(r, { status: p.response.status, mime: p.response.mimeType, fromCache: p.response.fromDiskCache || p.response.fromServiceWorker }); break; }
+    case 'Network.loadingFinished': { const r = reqs.get(p.requestId); if (r) { ev('request', { ...r, start: r.t, ms: Date.now() - t0 - r.t, bytes: p.encodedDataLength }); reqs.delete(p.requestId); } break; }
+    case 'Network.loadingFailed': { const r = reqs.get(p.requestId); if (r) { ev('request', { ...r, start: r.t, ms: Date.now() - t0 - r.t, failed: p.errorText, blocked: p.blockedReason }); reqs.delete(p.requestId); } break; }
+    case 'Runtime.bindingCalled': if (p.name === '__vuaPerf') { try { ev('perf', JSON.parse(p.payload)); } catch {} } break;
+  } });
+await send('Runtime.addBinding', { name: '__vuaPerf' });
+await send('Page.addScriptToEvaluateOnNewDocument', { source: `try { const __o = new PerformanceObserver((l) => l.getEntries().forEach((e) => window.__vuaPerf && __vuaPerf(JSON.stringify(e.entryType === 'layout-shift' ? { kind: 'layout-shift', value: +e.value.toFixed(4), hadInput: e.hadRecentInput } : { kind: e.entryType, ms: Math.round(e.duration), name: e.name })))); __o.observe({ type: 'longtask' }); __o.observe({ type: 'layout-shift', buffered: true }); } catch {}` });
 await send('Emulation.setDeviceMetricsOverride', { width: W, height: H, deviceScaleFactor: 1, mobile: W < 600 });
 // Overlay: visible pointer + caption bar, re-injected after every navigation.
 const OVERLAY = `(() => { if (window.__vua) return; window.__vua = 1;
@@ -48,7 +63,7 @@ await send('Page.startScreencast', { format: 'jpeg', quality: 80, maxWidth: W, m
 
 const captions = []; const findings = []; const timings = [];
 const now = () => Date.now() - t0;
-const caption = async (text, ms = 3500, kind = 'note', onShown) => {
+const caption = async (text, ms = 3500, kind = 'note', onShown) => { ev('caption', { kind, text });
   await evaluate(OVERLAY);
   await evaluate(`(() => { const b = document.getElementById('__vua_caption'); b.textContent = ${JSON.stringify(text)}; b.style.background = ${JSON.stringify(kind === 'problem' ? 'rgba(180,20,20,.9)' : 'rgba(0,0,0,.82)')}; b.style.display='block'; })()`);
   captions.push({ start: now(), end: now() + ms, text, kind }); await sleep(400); if (onShown) await onShown(); await sleep(Math.max(0, ms - 400));
@@ -62,7 +77,7 @@ const click = async (sel) => { const p = await center(sel); if (!p) throw new Er
 const type = async (sel, text) => { await click(sel); for (const ch of text) { await send('Input.insertText', { text: ch }); await sleep(90 + Math.random() * 140); } };
 
 let shotN = 0;
-for (const step of scenario.steps) {
+for (const step of (scenario.steps || [])) { ev('action', { step: JSON.stringify(step).slice(0, 200) });
   if (step.goto) { const s = Date.now(); await send('Page.navigate', { url: step.goto }); await sleep(step.settle ?? 2500);
     const nav = await evaluate(`JSON.stringify((() => { const n = performance.getEntriesByType('navigation')[0] || {}; const lcp = performance.getEntriesByType('largest-contentful-paint').pop(); return { ttfb: Math.round(n.responseStart||0), dcl: Math.round(n.domContentLoadedEventEnd||0), load: Math.round(n.loadEventEnd||0), lcp: lcp ? Math.round(lcp.startTime) : null }; })())`);
     timings.push({ step: `open ${step.goto}`, wallMs: Date.now() - s, ...JSON.parse(nav || '{}') }); }
@@ -78,6 +93,7 @@ for (const step of scenario.steps) {
       const png = await send('Page.captureScreenshot', { format: 'png' }); writeFileSync(join(out, shot), Buffer.from(png.data, 'base64')); });
     findings.push({ ...step.problem, videoAt: ts, screenshot: shot, steps: step.problem.steps ?? '' }); }
 }
+if (scenario.freeSeconds) { if (scenario.url) await send('Page.navigate', { url: scenario.url }); console.log(`free mode: drive the browser now, recording ${scenario.freeSeconds}s…`); await sleep(scenario.freeSeconds * 1000); }
 await send('Page.stopScreencast'); await sleep(300);
 // ffconcat with exact per-frame durations (variable frame rate → real timing).
 const lines = ['ffconcat version 1.0'];
@@ -87,5 +103,8 @@ writeFileSync(join(out, 'frames.ffconcat'), lines.join('\n') + '\n');
 writeFileSync(join(out, 'captions.json'), JSON.stringify(captions, null, 2));
 writeFileSync(join(out, 'findings.json'), JSON.stringify(findings, null, 2));
 writeFileSync(join(out, 'timings.json'), JSON.stringify(timings, null, 2));
+for (const r of reqs.values()) events.push({ t: r.t, type: 'request', ...r, start: r.t, pending: true });
+writeFileSync(join(out, 'events.json'), JSON.stringify(events.sort((a, b) => a.t - b.t), null, 1));
+writeFileSync(join(out, 'frames.json'), JSON.stringify(frames));
 await fetch(`http://127.0.0.1:${port}/json/close/${target.id}`).catch(() => {}); ws.close();
-console.log(`recorded ${frames.length} frames, ${captions.length} captions, ${findings.length} findings → ${out}`);
+console.log(`recorded ${frames.length} frames, ${captions.length} captions, ${findings.length} findings, ${events.length} events → ${out}`);

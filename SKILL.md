@@ -1,92 +1,101 @@
 ---
 name: video-ux-audit
-description: Run a captioned video UX + performance audit of any web view (inbox, dashboard, checkout, settings…) by driving a real browser like a non-technical person, burning a caption into the video at every problem, and writing findings.md with severity, repro steps, expected vs actual, timestamps, screenshots and concrete UX and performance suggestions. Use when asked to "audit this page/view", "record a UX review", "find what's broken in X", or before a redesign.
+description: Universal instrument to find issues, gaps and opportunities in any UI fast. Record a short session of a person using it, capture every console, network and performance event on the same clock as the video frames, and let an AI review the whole fused timeline in one shot. Output is a ranked findings.md with evidence and UX and performance fixes. Use for "audit this view/app/flow", "why does X feel broken or slow", before a redesign, or after a release.
 ---
 
-# Video UX audit
+# Video + timeline UX audit
 
-You produce three things for one view:
+**The idea:** a few seconds to a few minutes of real use already holds most of what is wrong. Problems slip past because nobody sees everything at once: what the person tried, what the screen showed, what the code logged, and what the network did. This method records all of it **on one clock**, so every frame can be explained by its events and every event can be seen in its frame. An AI then reads the whole picture in a single pass.
 
-1. **`audit.mp4`**: a screen recording of a person using the view. A caption is shown on screen whenever you narrate an intent (black) or hit a problem (red, `P1 · title`).
-2. **`findings.md`**: one row per problem: ID, severity, steps, expected, actual, video timestamp, screenshot, suspected area, UX suggestion and performance suggestion. Below it is a timing table.
-3. **`shots/<ID>.png`**: a screenshot of each problem with its caption visible.
+## Outputs
 
-In the original use case, an inbox (help-desk) view, one 15-minute recording produced 48 findings: 1 P0, 20 P1 and 27 P2. Those became about 20 small fixes, each re-proven with a fresh recording.
-
-## 0. Safety first (non-negotiable)
-
-- Use only **test data and test accounts**. Make writes (send, claim, resolve, edit) only in a sandbox or test workspace. On real customer data, stay **read-only**.
-- Never put real names, emails, phone numbers or ids in a caption, a file name or a published example. Blur them or use test records.
-- Use a dedicated browser profile. Close the browser and the tabs you opened when you finish.
-
-## 1. Plan the walk (5 minutes)
-
-List the **jobs** a real user does in this view, in plain words. For an inbox, for example:
-- find a conversation;
-- read it;
-- reply;
-- hand it to someone;
-- resolve it;
-- come back later via a link;
-- use it on a phone.
-
-For each job, write the path a non-technical person would try first, not the path the developers designed.
-
-## 2. Persona rules (how to "be a human")
-
-- **Narrate the intent** before acting: `say: "I want to find the customer who asked about an order."`
-- **Use what is visible.** Use buttons, labels and menus; no URLs typed by hand, no dev tools and no keyboard shortcuts unless the UI teaches them.
-- **Move slowly.** Move the pointer to the target, pause, click, and type at human speed. The recorder already does this.
-- **Try the obvious thing first.** If it fails, try the second-most-obvious thing, and log the first failure as a finding.
-- **Check the "after".** After every action, check that the list, counts, header and the other side (for example the customer's view) all agree.
-- **Reload, go back, open the link in a new tab.** State that does not survive these is a finding.
-- **Repeat at phone width** (390×844) for the main jobs.
-
-## 3. Record
-
-Chrome must run with `--remote-debugging-port`. Write a scenario (see `examples/demo-scenario.json`). Step types:
-
-| step | meaning |
+| File | What it is |
 |---|---|
-| `goto` (+`settle` ms) | open a URL; also records TTFB / DCL / load / LCP |
-| `say` (+`ms`) | intent caption (black) |
-| `click` (CSS selector) | move the visible pointer, then click |
-| `type` `{selector, text}` | click, then type character by character |
-| `press` (key) / `scroll` (px) / `wait` (ms) | keyboard, wheel, pause |
-| `problem` `{id, severity, title, steps, expected, actual, area, ux, perf}` | red caption + screenshot + finding |
+| `audit.mp4` | The session, with captions burned in: black for intent, red for each problem |
+| `events.json` | Every action, caption, console message, exception, request (status, ms, bytes, failures), long task and layout shift, timestamped on the video clock |
+| `timeline.md` | The fused timeline, plus **auto-detected signals**, each linked to the frame where it happened |
+| `ai-pack/` | Keyframes named by video time, `timeline.md` and `PROMPT.md`, ready for any multimodal LLM to review in one shot |
+| `findings.md` | The final ranked list: issues, gaps and opportunities, each with evidence, a UX fix and a performance fix |
+
+## 0. Safety
+
+- Use test accounts and test data, and make writes only in a sandbox. Real user data is read-only.
+- Never publish names, emails, phone numbers, ids or tokens. Scrub `events.json` (URLs, console text) before sharing.
+- Use a throwaway browser profile, and close it at the end.
+
+## 1. Frame the session (2 minutes)
+
+- Name **one to three jobs** a real user comes for, in their words. For example: "find the order", "reply to the customer", "change my plan".
+- Choose the length to fit the UI: **10–60 s** for one screen, **2–5 min** for a whole flow. Shorter, focused sessions beat long ones.
+
+## 2. Act like a real, non-technical person
+
+- **Say what you intend** before each move (a `say` caption).
+- **Use only what is visible.** No typed URLs, no dev tools, no hidden shortcuts.
+- **Try the obvious path first.** When it fails, that is a finding, even if another route works.
+- **After every action, check that everything agrees:** list, counters, header, other panels, and the other party's view.
+- **Stress the state.** Reload, go back, open in a new tab, use a slow network, and use phone width (390×844).
+- **Note the waits.** If you wait, the user waits.
+
+There are two ways to drive:
+- **Scripted.** A `scenario.json` of steps. It is repeatable, and the same file becomes the regression proof after the fix.
+- **Free.** `{"url": "...", "freeSeconds": 90}`. A person or an agent drives the browser by hand while everything is recorded. Use this for exploration.
+
+## 3. Record (web: Chrome DevTools Protocol, zero dependencies)
 
 ```bash
-node scripts/record.mjs my-scenario.json --port 9222 --out ./audit-out
-bash scripts/encode.sh ./audit-out             # → audit-out/audit.mp4
-node scripts/report.mjs ./audit-out --title "Inbox"   # → audit-out/findings.md
+chrome --remote-debugging-port=9222 --user-data-dir=/tmp/vua   # throwaway profile
+node scripts/record.mjs scenario.json --port 9222 --out ./audit-out
+bash scripts/encode.sh ./audit-out                 # → audit.mp4
+node scripts/timeline.mjs ./audit-out              # → timeline.md, signals.json, ai-pack/
+node scripts/report.mjs ./audit-out --title "X"    # → findings.md (captioned findings)
 ```
 
-**Work in loops.** Explore by hand or with an agent until you find a problem. Add the steps that reproduce it, plus a `problem` step, to the scenario. Re-record, and keep going. The final scenario becomes the regression script for the fixes.
+Scenario steps: `goto`, `say`, `click` (CSS selector, with a visible pointer), `type` (human speed), `press`, `scroll`, `wait`, and `problem` (a red caption, a screenshot and a finding).
 
-## 4. Severity
+**Other environments use the same method with a different capture.** Whatever the platform, record the screen plus the platform's log and network streams, put all of them on one clock, and pass them to `timeline.mjs` as `events.json`:
 
-- **P0**: data loss, a wrong recipient, a security or privacy leak, or the core job impossible.
-- **P1**: the core job is broken, misleading or very slow (more than 1 s for an action, more than 3 s for a view), or there is a cross-surface mismatch. An example of a mismatch is a header that says "Web" while the panel says "Chat".
-- **P2**: friction, confusing wording, a missing affordance, or a cosmetic problem.
+| Platform | Screen | Logs and network |
+|---|---|---|
+| iOS | `xcrun simctl io booted recordVideo` | `log stream`; a proxy (mitmproxy) for network |
+| Android | `adb shell screenrecord` | `adb logcat`; a proxy for network |
+| Desktop / Electron | OS screen capture | the CDP port, as for the web |
+| Terminal / CLI | `asciinema` | stderr, with timestamps |
 
-## 5. Write good findings
+## 4. Auto-signals (found for you, verify each one against its frame)
 
-- **Steps** must reproduce the problem from a clean start.
-- **Expected** is what a user would assume, not what the spec says.
-- **Actual** is exactly what happened, with numbers and timings.
-- **Suspected area** is the component, endpoint or query, if you can see the code; otherwise the UI region.
-- **UX suggestion** is the smallest change that removes the confusion, in user words.
-- **Perf suggestion** is concrete: prefetch on hover, stream the first screen, a server-side index or filter, cache immutable assets, debounce, or virtualise long lists.
+| Signal | Typical meaning |
+|---|---|
+| js-exception, console-error | Broken feature, often silent for the user |
+| request-failed, http-5xx, http-4xx | Missing data, wrong state, bad permissions |
+| slow-request (≥ 1 s; P1 at ≥ 3 s) | A wait the user feels; candidate for cache, prefetch or an index |
+| heavy-payload (≥ 500 KB) | Slow on mobile; paginate, compress or trim fields |
+| duplicate-request (same call within 2 s) | Wasted work; dedupe or cache |
+| never-finished | Hung request, missing timeout, spinner forever |
+| long-task (≥ 200 ms; P1 at ≥ 500 ms) | Frozen UI; split the work, virtualise, move to a worker |
+| layout-shift (≥ 0.05, no input) | Content jumps; reserve space |
 
-## 6. Performance pass (same session)
+The thresholds can be changed with `--slow` and `--big`.
 
-- Use the `timings.json` the recorder writes for every `goto` and click.
-- Add numbers for the main actions, measured from click to content. Use `performance` entries or a `MutationObserver` in the page.
-- Use these targets unless the product sets its own: action ≤ 200 ms, view ≤ 1 s warm, LCP ≤ 2.5 s.
-- Record misses as findings with the measured numbers.
+## 5. One-shot AI review
 
-## 7. Deliver
+Give the AI `ai-pack/` (the keyframes, `timeline.md` and `PROMPT.md`). It returns, in a single pass:
 
-- Put `audit.mp4`, `findings.md` and `shots/` in one folder.
-- Fix P0 first, then the P1s. Make one small change per finding.
-- After each fix, re-run the same scenario and attach the new clip or screenshot as proof.
+1. **Issues**, each with severity and evidence: a frame and the timeline lines that explain it.
+2. **Gaps**: dead ends, missing feedback, unclear states, missing affordances, and two screens that disagree.
+3. **Opportunities**: requests to remove, cache or prefetch; steps to merge; defaults to set; what a top competitor does better.
+4. **A ranking** of everything by user impact ÷ effort.
+
+Rule: **no evidence, no row.** Every claim cites a frame or an event.
+
+## 6. Severity
+
+- **P0**: data loss, wrong recipient, privacy or security leak, or the core job is impossible.
+- **P1**: the core job is broken or misleading, an action takes over 1 s or a view over 3 s, a JS exception sits on the main path, or two surfaces disagree.
+- **P2**: friction, confusing wording, a cosmetic problem, or wasted requests.
+
+## 7. Close the loop
+
+- Fix P0 first, then the P1s, with one small change per finding.
+- Re-run the **same scenario** after each fix. Its new timeline is the proof: the signal is gone and the timing is better. Attach the before and after.
+- Keep the scenarios as a library. Re-running them after each release catches regressions in seconds.

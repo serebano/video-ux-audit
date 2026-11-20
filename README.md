@@ -1,6 +1,8 @@
 # video-ux-audit
 
-An agent skill and a set of zero-dependency tools for a **captioned video UX and performance audit** of any web view. The agent, or you, drives a real Chrome like a non-technical person. Every intent and every problem appears as a caption burned into the video, and the run ends with a `findings.md` that lists each issue with its repro steps, timestamp, screenshot, and UX and performance suggestions.
+A universal way to catch issues, gaps and opportunities in any UI. Record a short session of a person using it, and capture **every console, network and performance event on the same clock as the video frames**. An AI then reviews the whole fused timeline in one shot, and you get a ranked `findings.md` with evidence and fixes for UX and speed.
+
+Video alone shows *what* went wrong; events alone show *something* went wrong. Put together, each frame is explained by its events, and each event is seen in its frame.
 
 The method comes from an audit of a help-desk inbox: one recording produced 48 findings (1 P0, 20 P1, 27 P2), and these were turned into about 20 small fixes.
 
@@ -16,14 +18,19 @@ Needs Node 22 or later, ffmpeg and Chrome.
 node scripts/record.mjs examples/demo-scenario.json --port 9222 --out ./audit-out
 #    (edit "goto" in the scenario to point at your copy of examples/demo.html)
 
-# 3. Make the video and the report
+# 3. Video, fused timeline with auto-signals, AI pack, report
 bash scripts/encode.sh ./audit-out
+node scripts/timeline.mjs ./audit-out
 node scripts/report.mjs ./audit-out --title "Demo inbox"
 ```
 
-The output is `audit-out/audit.mp4`, `audit-out/findings.md`, `audit-out/shots/*.png` and `audit-out/timings.json`.
+Then give `audit-out/ai-pack/` (keyframes, `timeline.md` and `PROMPT.md`) to any multimodal LLM for a one-shot review. Every finding it returns must cite a frame or an event.
 
-See `examples/demo-out/` for a real run: a 12-second video, one P1 finding, and a screenshot with the caption visible.
+For free exploration, use a scenario of `{"url": "https://…", "freeSeconds": 60}`: you or an agent drive the browser, and everything is recorded.
+
+The output is `audit.mp4`, `events.json`, `timeline.md`, `signals.json`, `ai-pack/`, `findings.md` and `shots/`.
+
+See `examples/demo-out/` for a real 13-second run. The demo page has a JS error, a failed request, a 500 response and a frozen main thread planted in it, and the timeline flags each one at the frame where it happens.
 
 ## Use it as an agent skill
 

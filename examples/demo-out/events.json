@@ -1,0 +1,381 @@
+[
+ {
+  "t": 5,
+  "type": "action",
+  "step": "{\"goto\":\"file://examples/demo.html\",\"settle\":1500}"
+ },
+ {
+  "t": 7,
+  "type": "request",
+  "url": "file://examples/demo.html",
+  "method": "GET",
+  "kind": "Document",
+  "status": 200,
+  "mime": "text/html",
+  "fromCache": false,
+  "start": 7,
+  "ms": 9,
+  "bytes": 1170
+ },
+ {
+  "t": 1515,
+  "type": "log",
+  "level": "warning",
+  "source": "javascript",
+  "text": "Deprecated API for given entry type."
+ },
+ {
+  "t": 1516,
+  "type": "action",
+  "step": "{\"say\":\"First, Sam's refund chat.\",\"ms\":1800}"
+ },
+ {
+  "t": 1516,
+  "type": "caption",
+  "kind": "note",
+  "text": "First, Sam's refund chat."
+ },
+ {
+  "t": 3326,
+  "type": "action",
+  "step": "{\"click\":\"li:nth-child(2)\"}"
+ },
+ {
+  "t": 3406,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 3423,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 3440,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 3455,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 3474,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 3490,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 3506,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 3524,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 3540,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 3556,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 3574,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 3590,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 3605,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 3623,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 3640,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 3656,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 3690,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 4399,
+  "type": "exception",
+  "text": "ReferenceError: undefinedFn is not defined\n    at HTMLLIElement.<anonymous> (file://examples/demo.html:6:206)"
+ },
+ {
+  "t": 4399,
+  "type": "request",
+  "url": "file:///missing-api.json",
+  "method": "GET",
+  "kind": "Fetch",
+  "start": 4399,
+  "ms": 3,
+  "failed": "net::ERR_FAILED"
+ },
+ {
+  "t": 4399,
+  "type": "request",
+  "url": "https://httpbin.org/status/500",
+  "method": "GET",
+  "kind": "Fetch",
+  "status": 500,
+  "mime": "text/html",
+  "fromCache": false,
+  "start": 4399,
+  "ms": 3,
+  "bytes": 184
+ },
+ {
+  "t": 4401,
+  "type": "log",
+  "level": "error",
+  "source": "javascript",
+  "text": "Access to fetch at 'file:///missing-api.json' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+  "url": "file://examples/demo.html"
+ },
+ {
+  "t": 4402,
+  "type": "log",
+  "level": "error",
+  "source": "network",
+  "text": "Failed to load resource: net::ERR_FAILED",
+  "url": "file:///missing-api.json"
+ },
+ {
+  "t": 4402,
+  "type": "log",
+  "level": "error",
+  "source": "network",
+  "text": "Failed to load resource: the server responded with a status of 500 ()",
+  "url": "https://httpbin.org/status/500"
+ },
+ {
+  "t": 4402,
+  "type": "perf",
+  "kind": "longtask",
+  "ms": 452,
+  "name": "self"
+ },
+ {
+  "t": 4551,
+  "type": "action",
+  "step": "{\"wait\":1500}"
+ },
+ {
+  "t": 6053,
+  "type": "action",
+  "step": "{\"say\":\"The page froze for a moment when I opened it.\",\"ms\":2200}"
+ },
+ {
+  "t": 6053,
+  "type": "caption",
+  "kind": "note",
+  "text": "The page froze for a moment when I opened it."
+ },
+ {
+  "t": 8260,
+  "type": "action",
+  "step": "{\"say\":\"I'm a support person. I want to find the customer who asked about an order.\",\"ms\":3000}"
+ },
+ {
+  "t": 8260,
+  "type": "caption",
+  "kind": "note",
+  "text": "I'm a support person. I want to find the customer who asked about an order."
+ },
+ {
+  "t": 11268,
+  "type": "action",
+  "step": "{\"type\":{\"selector\":\"#search\",\"text\":\"order\"}}"
+ },
+ {
+  "t": 11292,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 11307,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 11324,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 11340,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 11357,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 11373,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 11390,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 11406,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 11423,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 11440,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 11457,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 11473,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 11490,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 11507,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 11523,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 11557,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 12776,
+  "type": "action",
+  "step": "{\"wait\":800}"
+ },
+ {
+  "t": 13578,
+  "type": "action",
+  "step": "{\"problem\":{\"id\":\"DEMO-01\",\"severity\":\"P1\",\"title\":\"Search ignores message text: 'order' finds nothing\",\"steps\":\"Type 'order' in Search\",\"expected\":\"Alex's conversation (its message mentions an order)"
+ },
+ {
+  "t": 13578,
+  "type": "caption",
+  "kind": "problem",
+  "text": "P1 · Search ignores message text: 'order' finds nothing"
+ }
+]

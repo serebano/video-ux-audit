@@ -1,20 +1,26 @@
 [
   {
-    "start": 1518,
-    "end": 4518,
+    "start": 1519,
+    "end": 3319,
+    "text": "First, Sam's refund chat.",
+    "kind": "note"
+  },
+  {
+    "start": 6054,
+    "end": 8254,
+    "text": "The page froze for a moment when I opened it.",
+    "kind": "note"
+  },
+  {
+    "start": 8262,
+    "end": 11262,
     "text": "I'm a support person. I want to find the customer who asked about an order.",
     "kind": "note"
   },
   {
-    "start": 6826,
-    "end": 10326,
+    "start": 13580,
+    "end": 17080,
     "text": "P1 · Search ignores message text: 'order' finds nothing",
     "kind": "problem"
-  },
-  {
-    "start": 11135,
-    "end": 13135,
-    "text": "Opening the first conversation by hand instead.",
-    "kind": "note"
   }
 ]

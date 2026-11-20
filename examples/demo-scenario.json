@@ -1,16 +1,53 @@
 {
-  "viewport": { "width": 1280, "height": 720 },
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
   "steps": [
-    { "goto": "file:///ABSOLUTE/PATH/TO/examples/demo.html", "settle": 1500 },
-    { "say": "I'm a support person. I want to find the customer who asked about an order.", "ms": 3000 },
-    { "type": { "selector": "#search", "text": "order" } },
-    { "wait": 800 },
-    { "problem": { "id": "DEMO-01", "severity": "P1", "title": "Search ignores message text: 'order' finds nothing",
-      "steps": "Type 'order' in Search", "expected": "Alex's conversation (its message mentions an order)",
-      "actual": "Empty list; search matches names only", "area": "list search filter",
-      "ux": "Search names AND message text; show 'No results for X' with a clear button",
-      "perf": "Search server-side with a text index; debounce 150 ms" }, "ms": 3500 },
-    { "click": "li" },
-    { "say": "Opening the first conversation by hand instead.", "ms": 2000 }
+    {
+      "goto": "file:///ABSOLUTE/PATH/TO/examples/demo.html",
+      "settle": 1500
+    },
+    {
+      "say": "First, Sam's refund chat.",
+      "ms": 1800
+    },
+    {
+      "click": "li:nth-child(2)"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "say": "The page froze for a moment when I opened it.",
+      "ms": 2200
+    },
+    {
+      "say": "I'm a support person. I want to find the customer who asked about an order.",
+      "ms": 3000
+    },
+    {
+      "type": {
+        "selector": "#search",
+        "text": "order"
+      }
+    },
+    {
+      "wait": 800
+    },
+    {
+      "problem": {
+        "id": "DEMO-01",
+        "severity": "P1",
+        "title": "Search ignores message text: 'order' finds nothing",
+        "steps": "Type 'order' in Search",
+        "expected": "Alex's conversation (its message mentions an order)",
+        "actual": "Empty list; search matches names only",
+        "area": "list search filter",
+        "ux": "Search names AND message text; show 'No results for X' with a clear button",
+        "perf": "Search server-side with a text index; debounce 150 ms"
+      },
+      "ms": 3500
+    }
   ]
 }

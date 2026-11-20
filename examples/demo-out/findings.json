@@ -9,7 +9,7 @@
     "area": "list search filter",
     "ux": "Search names AND message text; show 'No results for X' with a clear button",
     "perf": "Search server-side with a text index; debounce 150 ms",
-    "videoAt": 6823,
+    "videoAt": 13578,
     "screenshot": "shots/DEMO-01.png"
   }
 ]
