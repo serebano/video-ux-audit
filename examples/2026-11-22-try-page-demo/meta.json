@@ -1,0 +1,92 @@
+{
+ "t0EpochMs": 1795377490703,
+ "t0Iso": "2026-11-22T19:58:10.703Z",
+ "durationMs": 34020,
+ "viewport": {
+  "width": 1280,
+  "height": 800
+ },
+ "isolated": true,
+ "correlate": [
+  "https://busymate.ai"
+ ],
+ "steps": [
+  {
+   "n": 1,
+   "t": 23,
+   "epochMs": 1795377490726,
+   "traceId": "35e78e179c3afc7605adf4bf681974c0",
+   "step": "{\"goto\":\"https://busymate.ai/try/wordpress.demo.busymate.ai\",\"settle\":3500}"
+  },
+  {
+   "n": 2,
+   "t": 3764,
+   "epochMs": 1795377494467,
+   "traceId": "f791baf3a2a1ef73217599c2ae25180c",
+   "step": "{\"say\":\"I run a small studio. I want to see what this mate would tell my customers.\",\"ms\":3000}"
+  },
+  {
+   "n": 3,
+   "t": 6769,
+   "epochMs": 1795377497472,
+   "traceId": "6e25be864ea5beda1e7719beb067a1ed",
+   "step": "{\"problem\":{\"id\":\"EX-01\",\"severity\":\"P2\",\"title\":\"On load the chat first said 'Hi, I'm your mate' with the Busymate logo, then switched to the studio\",\"steps\":\"Open the try page in a fresh browser\",\"e"
+  },
+  {
+   "n": 4,
+   "t": 10323,
+   "epochMs": 1795377501026,
+   "traceId": "4efd7285e1cd261dc6d8b2266cfcfeec",
+   "step": "{\"problem\":{\"id\":\"EX-02\",\"severity\":\"P2\",\"title\":\"Behind the scenes the page fetched the same suggestions 4 times and the same scan 4 times\",\"steps\":\"Open the try page; watch the network lane\",\"expect"
+  },
+  {
+   "n": 5,
+   "t": 13874,
+   "epochMs": 1795377504577,
+   "traceId": "cce3845319827f923a92fd99057d96c4",
+   "step": "{\"clickAt\":[376,547]}"
+  },
+  {
+   "n": 6,
+   "t": 14651,
+   "epochMs": 1795377505354,
+   "traceId": "bef7d49657c998600daac8bc60075d83",
+   "step": "{\"keys\":\"Do you do kitchen renovations? What does a consult cost?\"}"
+  },
+  {
+   "n": 7,
+   "t": 21087,
+   "epochMs": 1795377511790,
+   "traceId": "0c73e0ba08c552507a0a46923641227f",
+   "step": "{\"press\":\"Enter\"}"
+  },
+  {
+   "n": 8,
+   "t": 21121,
+   "epochMs": 1795377511824,
+   "traceId": "716f36947be72fddd28d86a590ee5601",
+   "step": "{\"say\":\"Waiting for the answer…\",\"ms\":2000}"
+  },
+  {
+   "n": 9,
+   "t": 23138,
+   "epochMs": 1795377513841,
+   "traceId": "e448f16b69e6a81e64d64263f3245d40",
+   "step": "{\"wait\":6000}"
+  },
+  {
+   "n": 10,
+   "t": 29140,
+   "epochMs": 1795377519843,
+   "traceId": "c0e44f69dab9b6f61af655741de8464f",
+   "step": "{\"problem\":{\"id\":\"EX-03\",\"severity\":\"P2\",\"title\":\"Every visit logs a red 404 in the console: the bot check answers 404 when there is nothing to check\",\"steps\":\"Open the try page with DevTools console "
+  },
+  {
+   "n": 11,
+   "t": 32711,
+   "epochMs": 1795377523414,
+   "traceId": "23c7d9af86aef0733bfe72f84e317cb1",
+   "step": "{\"wait\":1000}"
+  }
+ ]
+}

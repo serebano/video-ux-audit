@@ -1,0 +1,58 @@
+[
+  {
+    "id": "EX-01",
+    "severity": "P2",
+    "title": "On load the chat first said 'Hi, I'm your mate' with the Busymate logo, then switched to the studio",
+    "steps": "Open the try page in a fresh browser",
+    "expected": "The studio's name and logo from the first frame (or a neutral skeleton)",
+    "actual": "A generic mate greeting and logo for about 0.5 s (frames 00:00.46\u201300:01.11), then the studio's",
+    "area": "chat iframe first render before the workspace branding arrives",
+    "ux": "Render a skeleton until branding is known, or pass the branding in the iframe URL",
+    "perf": "Inline the branding in the iframe's HTML so no second render is needed",
+    "videoAt": 6769,
+    "screenshot": "shots/EX-01-at-00-00-965.png (the generic state) \u00b7 shots/EX-01.png (caption time)",
+    "source": "post-hoc frame review of the exploratory pass, then captioned in this pass"
+  },
+  {
+    "id": "EX-02",
+    "severity": "P2",
+    "title": "Behind the scenes the page fetched the same suggestions 4 times and the same scan 4 times",
+    "steps": "Open the try page; watch the network lane",
+    "expected": "One request per resource",
+    "actual": "4 identical GET /api/quickstart/suggest (one aborted), 4 identical GET /api/quickstart/scan in 0.45 s, 2 event streams to /api/quickstart/deep/watch (one aborted)",
+    "area": "try page data hooks (effect runs twice / several components fetch the same thing)",
+    "ux": "None visible directly; on first visit the suggested questions took about 7 s to appear",
+    "perf": "Share one request per resource (a cache or request dedupe), open one stream",
+    "videoAt": 10323,
+    "screenshot": "shots/EX-02.png",
+    "source": "auto-signal duplicate-request, checked in events.json, then captioned"
+  },
+  {
+    "id": "EX-03",
+    "severity": "P2",
+    "title": "Every visit logs a red 404 in the console: the bot check answers 404 when there is nothing to check",
+    "steps": "Open the try page with DevTools console open",
+    "expected": "A 200/204 'no challenge' answer, a clean console",
+    "actual": "GET /api/quickstart/bot-challenge \u2192 404 and 'Failed to load resource' in the console",
+    "area": "quickstart bot-challenge endpoint",
+    "ux": "None for visitors; it hides real errors from developers and monitoring",
+    "perf": "Return 204 or skip the call when no challenge is configured",
+    "videoAt": 29140,
+    "screenshot": "shots/EX-03.png",
+    "source": "auto-signals http-4xx + console-error, then captioned"
+  },
+  {
+    "id": "EX-04",
+    "severity": "P2",
+    "title": "While the answer streams, raw Markdown shows for a moment: '*Design Package' in italics with a stray asterisk before the bold renders",
+    "steps": "Ask a question whose answer has a bold list item; watch the stream",
+    "expected": "Bold text appears bold, or plain, never with stray markup",
+    "actual": "At 00:24.019 the list item reads '*Design Package' (italic, leading asterisk); 30 ms later it is bold",
+    "videoAt": 24019,
+    "screenshot": "shots/EX-04.png",
+    "area": "chat streaming Markdown renderer (partial '**' token)",
+    "ux": "Hold back an unclosed '*'/'**' until the closing marker arrives",
+    "perf": "None",
+    "source": "post-hoc frame review (not seen during the pass)"
+  }
+]

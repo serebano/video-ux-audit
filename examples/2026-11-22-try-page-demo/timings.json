@@ -1,0 +1,10 @@
+[
+  {
+    "step": "open https://busymate.ai/try/wordpress.demo.busymate.ai",
+    "wallMs": 3741,
+    "ttfb": 234,
+    "dcl": 574,
+    "load": 788,
+    "lcp": null
+  }
+]

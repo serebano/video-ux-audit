@@ -10,13 +10,14 @@ const findings = read('findings.json', []); const timings = read('timings.json',
 const order = { P0: 0, P1: 1, P2: 2 }; findings.sort((a, b) => (order[a.severity] ?? 3) - (order[b.severity] ?? 3));
 const mmss = (ms) => `${String(Math.floor(ms / 60000)).padStart(2, '0')}:${String(Math.floor(ms / 1000) % 60).padStart(2, '0')}`;
 const cell = (s) => String(s ?? '').replace(/\|/g, '\\|').replace(/\n/g, ' ');
+const hasSource = findings.some((f) => f.source);
 const count = (s) => findings.filter((f) => f.severity === s).length;
 const md = [
   `# ${title}: video UX audit, findings`, '',
   `Video: \`audit.mp4\` (timestamps are caption times). Total: ${findings.length}, P0 ${count('P0')}, P1 ${count('P1')}, P2 ${count('P2')}.`, '',
-  '| ID | Sev | Finding | Steps | Expected | Actual | Video | Screenshot | Suspected area | UX suggestion | Performance suggestion |',
-  '|---|---|---|---|---|---|---|---|---|---|---|',
-  ...findings.map((f) => `| ${cell(f.id)} | ${cell(f.severity)} | ${cell(f.title)} | ${cell(f.steps)} | ${cell(f.expected)} | ${cell(f.actual)} | ${mmss(f.videoAt ?? 0)} | ${cell(f.screenshot)} | ${cell(f.area)} | ${cell(f.ux)} | ${cell(f.perf)} |`),
+  `| ID | Sev | Finding | Steps | Expected | Actual | Video | Screenshot | Suspected area | UX suggestion | Performance suggestion |${hasSource ? ' Found by |' : ''}`,
+  `|---|---|---|---|---|---|---|---|---|---|---|${hasSource ? '---|' : ''}`,
+  ...findings.map((f) => `| ${cell(f.id)} | ${cell(f.severity)} | ${cell(f.title)} | ${cell(f.steps)} | ${cell(f.expected)} | ${cell(f.actual)} | ${mmss(f.videoAt ?? 0)} | ${cell(f.screenshot)} | ${cell(f.area)} | ${cell(f.ux)} | ${cell(f.perf)} |${hasSource ? ` ${cell(f.source)} |` : ''}`),
   '', '## Timings', '', '| Step | Wall ms | TTFB | DCL | Load | LCP |', '|---|---|---|---|---|---|',
   ...timings.map((t) => `| ${cell(t.step)} | ${t.wallMs ?? t.ms ?? ''} | ${t.ttfb ?? ''} | ${t.dcl ?? ''} | ${t.load ?? ''} | ${t.lcp ?? ''} |`),
   '', '## Next', '', '- Fix P0 first, then P1. One small change per finding, each proven with a fresh recording of the same steps.', '',

@@ -1,0 +1,24 @@
+{
+  "viewport": { "width": 1280, "height": 800 },
+  "privacySignals": true,
+  "correlate": ["https://busymate.ai"],
+  "steps": [
+    { "goto": "https://busymate.ai/try/wordpress.demo.busymate.ai", "settle": 3500 },
+    { "say": "I run a small studio. I want to see what this mate would tell my customers.", "ms": 3000 },
+    { "problem": { "id": "EX-01", "severity": "P2", "title": "On load the chat first said 'Hi, I'm your mate' with the Busymate logo, then switched to the studio",
+        "steps": "Open the try page in a fresh browser", "expected": "The studio's name and logo from the first frame (or a neutral skeleton)", "actual": "A generic mate greeting and logo for about 0.5 s (frames 00:00.46–00:01.11), then the studio's",
+        "area": "chat iframe first render before the workspace branding arrives", "ux": "Render a skeleton until branding is known, or pass the branding in the iframe URL", "perf": "Inline the branding in the iframe's HTML so no second render is needed" }, "ms": 3500 },
+    { "problem": { "id": "EX-02", "severity": "P2", "title": "Behind the scenes the page fetched the same suggestions 4 times and the same scan 4 times",
+        "steps": "Open the try page; watch the network lane", "expected": "One request per resource", "actual": "4 identical GET /api/quickstart/suggest (one aborted), 4 identical GET /api/quickstart/scan in 0.45 s, 2 event streams to /api/quickstart/deep/watch (one aborted)",
+        "area": "try page data hooks (effect runs twice / several components fetch the same thing)", "ux": "None visible directly; on first visit the suggested questions took about 7 s to appear", "perf": "Share one request per resource (a cache or request dedupe), open one stream" }, "ms": 3500 },
+    { "clickAt": [376, 547] },
+    { "keys": "Do you do kitchen renovations? What does a consult cost?" },
+    { "press": "Enter" },
+    { "say": "Waiting for the answer…", "ms": 2000 },
+    { "wait": 6000 },
+    { "problem": { "id": "EX-03", "severity": "P2", "title": "Every visit logs a red 404 in the console: the bot check answers 404 when there is nothing to check",
+        "steps": "Open the try page with DevTools console open", "expected": "A 200/204 'no challenge' answer, a clean console", "actual": "GET /api/quickstart/bot-challenge → 404 and 'Failed to load resource' in the console",
+        "area": "quickstart bot-challenge endpoint", "ux": "None for visitors; it hides real errors from developers and monitoring", "perf": "Return 204 or skip the call when no challenge is configured" }, "ms": 3500 },
+    { "wait": 1000 }
+  ]
+}

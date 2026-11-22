@@ -1,0 +1,32 @@
+[
+  {
+    "start": 3766,
+    "end": 6766,
+    "text": "I run a small studio. I want to see what this mate would tell my customers.",
+    "kind": "note"
+  },
+  {
+    "start": 6772,
+    "end": 10272,
+    "text": "P2 · On load the chat first said 'Hi, I'm your mate' with the Busymate logo, then switched to the studio",
+    "kind": "problem"
+  },
+  {
+    "start": 10324,
+    "end": 13824,
+    "text": "P2 · Behind the scenes the page fetched the same suggestions 4 times and the same scan 4 times",
+    "kind": "problem"
+  },
+  {
+    "start": 21135,
+    "end": 23135,
+    "text": "Waiting for the answer…",
+    "kind": "note"
+  },
+  {
+    "start": 29143,
+    "end": 32643,
+    "text": "P2 · Every visit logs a red 404 in the console: the bot check answers 404 when there is nothing to check",
+    "kind": "problem"
+  }
+]

@@ -1,0 +1,4324 @@
+[
+ {
+  "t": 23,
+  "type": "action",
+  "n": 1,
+  "traceId": "35e78e179c3afc7605adf4bf681974c0",
+  "step": "{\"goto\":\"https://busymate.ai/try/wordpress.demo.busymate.ai\",\"settle\":3500}"
+ },
+ {
+  "t": 25,
+  "type": "request",
+  "url": "https://busymate.ai/try/wordpress.demo.busymate.ai",
+  "method": "GET",
+  "kind": "Document",
+  "step": 1,
+  "status": 200,
+  "mime": "text/html",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=1.3"
+  },
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-7c47097e449e2c68-01",
+  "start": 25,
+  "ms": 293,
+  "bytes": 32516
+ },
+ {
+  "t": 267,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/css/a046fed464fa4e7a.css",
+  "method": "GET",
+  "kind": "Stylesheet",
+  "step": 1,
+  "status": 200,
+  "mime": "text/css",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-3c3a57541a175a1e-01",
+  "start": 267,
+  "ms": 135,
+  "bytes": 4499
+ },
+ {
+  "t": 276,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/css/19226f581fa316ef.css",
+  "method": "GET",
+  "kind": "Stylesheet",
+  "step": 1,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-9930389436323406-01",
+  "status": 200,
+  "mime": "text/css",
+  "fromCache": false,
+  "start": 276,
+  "ms": 126,
+  "bytes": 295
+ },
+ {
+  "t": 276,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/css/dc84d2a45bc0c242.css",
+  "method": "GET",
+  "kind": "Stylesheet",
+  "step": 1,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-f3799a5f758537d1-01",
+  "status": 200,
+  "mime": "text/css",
+  "fromCache": false,
+  "start": 276,
+  "ms": 178,
+  "bytes": 16908
+ },
+ {
+  "t": 276,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/css/185e3a74381fcdbc.css",
+  "method": "GET",
+  "kind": "Stylesheet",
+  "step": 1,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-0d642b4433bb4909-01",
+  "status": 200,
+  "mime": "text/css",
+  "fromCache": false,
+  "start": 276,
+  "ms": 180,
+  "bytes": 28715
+ },
+ {
+  "t": 276,
+  "type": "request",
+  "url": "https://busymate.ai/marketing/fonts/dm-sans-latin.woff2",
+  "method": "GET",
+  "kind": "Font",
+  "step": 1,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-c2e13b1239655adc-01",
+  "status": 200,
+  "mime": "font/woff2",
+  "fromCache": false,
+  "start": 276,
+  "ms": 182,
+  "bytes": 62750
+ },
+ {
+  "t": 277,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/webpack-4c47e6f130cb06c6.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-dcdf6cc61cd3bc40-01",
+  "start": 277,
+  "ms": 233,
+  "bytes": 13421
+ },
+ {
+  "t": 277,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/14040-cb1ade644cb10a15.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-90c2a0168859488a-01",
+  "start": 277,
+  "ms": 245,
+  "bytes": 11068
+ },
+ {
+  "t": 277,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/main-app-d968fb068e6980e9.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-11027cfe555ebcfa-01",
+  "start": 277,
+  "ms": 247,
+  "bytes": 418
+ },
+ {
+  "t": 277,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/18007-bea5c2467b77aa2f.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-50bc604acb8ce52f-01",
+  "start": 277,
+  "ms": 257,
+  "bytes": 2102
+ },
+ {
+  "t": 277,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/app/global-error-eceba8b7d37f0dee.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-16bfbeaf5cef85ae-01",
+  "start": 277,
+  "ms": 301,
+  "bytes": 1347
+ },
+ {
+  "t": 277,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/78094-d5e63649ad702da8.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-f59e229d4b18e7ce-01",
+  "start": 277,
+  "ms": 333,
+  "bytes": 3468
+ },
+ {
+  "t": 277,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/16266-e2c7d3293f0480b3.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-26c97f114673ee0a-01",
+  "start": 277,
+  "ms": 342,
+  "bytes": 3050
+ },
+ {
+  "t": 277,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/5545-ceec51d422941d50.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-53d2766207ced520-01",
+  "start": 277,
+  "ms": 342,
+  "bytes": 3861
+ },
+ {
+  "t": 277,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/4135-f16ab98e38d95fcb.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-0545eb53ab00b171-01",
+  "start": 277,
+  "ms": 351,
+  "bytes": 10394
+ },
+ {
+  "t": 277,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/layout-shared/app-356abf22f1b11ad0.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-93e1ae6c9a456210-01",
+  "start": 277,
+  "ms": 368,
+  "bytes": 27820
+ },
+ {
+  "t": 277,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/71022-df156665b73afb32.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-6972c4c9c231ecc6-01",
+  "start": 277,
+  "ms": 375,
+  "bytes": 42108
+ },
+ {
+  "t": 277,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/3e9ec74f-6ce919f9a9b4add8.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-846e245f0605d7f0-01",
+  "start": 277,
+  "ms": 375,
+  "bytes": 51709
+ },
+ {
+  "t": 278,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/3902-e15979bfe4b7ef17.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-3bc97722170708c5-01",
+  "start": 278,
+  "ms": 249,
+  "bytes": 3189
+ },
+ {
+  "t": 278,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/30148-2952631d90712a83.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-2593e567a0992c4d-01",
+  "start": 278,
+  "ms": 303,
+  "bytes": 2755
+ },
+ {
+  "t": 278,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/9277-715ac4088c2fc4a1.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-1cf366450b696dbc-01",
+  "start": 278,
+  "ms": 303,
+  "bytes": 3459
+ },
+ {
+  "t": 278,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/5942-cbe50c9ab93f8161.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-606598cb752afc41-01",
+  "start": 278,
+  "ms": 330,
+  "bytes": 2089
+ },
+ {
+  "t": 278,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/11550-57ce6a446f889eee.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-760dfca8a9bcded2-01",
+  "start": 278,
+  "ms": 335,
+  "bytes": 3090
+ },
+ {
+  "t": 278,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/app/layout-c6de81a61154f7ba.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-5fe13a2efd3757d3-01",
+  "start": 278,
+  "ms": 337,
+  "bytes": 5254
+ },
+ {
+  "t": 278,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/66939-bd943ec1b69d4e8b.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-9d1deba0de0e2ad5-01",
+  "start": 278,
+  "ms": 341,
+  "bytes": 3574
+ },
+ {
+  "t": 278,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/83348-bfee169b68a3bce3.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-d2dd06b2a1b7c47c-01",
+  "start": 278,
+  "ms": 342,
+  "bytes": 4919
+ },
+ {
+  "t": 278,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/37200-aad9d5016ea7c233.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-f36af0cc0d9eb5ec-01",
+  "start": 278,
+  "ms": 342,
+  "bytes": 4917
+ },
+ {
+  "t": 278,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/14414-98e1bdf480667d77.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-759f31e1464311dc-01",
+  "start": 278,
+  "ms": 343,
+  "bytes": 6018
+ },
+ {
+  "t": 278,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/53647-9a13f222ab461c4d.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-76120387f1b94fb2-01",
+  "start": 278,
+  "ms": 352,
+  "bytes": 10953
+ },
+ {
+  "t": 278,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/11543-a511c19fa622b2f5.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-ff6ce2eec8e0c280-01",
+  "start": 278,
+  "ms": 355,
+  "bytes": 15719
+ },
+ {
+  "t": 278,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/app/try/%5Bhost%5D/page-84f7f61bf323ce05.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-102432781e15db7c-01",
+  "start": 278,
+  "ms": 356,
+  "bytes": 13823
+ },
+ {
+  "t": 279,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/app/not-found-0e356eb42577373b.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-0019d2c3235f9f01-01",
+  "start": 279,
+  "ms": 255,
+  "bytes": 924
+ },
+ {
+  "t": 279,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/17506.8c3d3d38d3efa8bf.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-8dfc9048dcbf4760-01",
+  "start": 279,
+  "ms": 274,
+  "bytes": 386
+ },
+ {
+  "t": 279,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/83259.d8e50ae35aa6d7e5.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-b3d3025edd11555c-01",
+  "start": 279,
+  "ms": 274,
+  "bytes": 406
+ },
+ {
+  "t": 279,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/app/error-3e156494427e9196.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-789648fd7fb578e7-01",
+  "start": 279,
+  "ms": 303,
+  "bytes": 2414
+ },
+ {
+  "t": 279,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/82012.feabfe0dbbdd6683.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-5e77b022c1396e47-01",
+  "start": 279,
+  "ms": 328,
+  "bytes": 1556
+ },
+ {
+  "t": 279,
+  "type": "request",
+  "url": "https://busymate.ai/kb/v1.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.3"
+  },
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-490a37e9375e60c8-01",
+  "start": 279,
+  "ms": 328,
+  "bytes": 2530
+ },
+ {
+  "t": 279,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/34061-5b0686857914c913.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-a7d954ef71b315f5-01",
+  "start": 279,
+  "ms": 349,
+  "bytes": 5920
+ },
+ {
+  "t": 493,
+  "type": "request",
+  "url": "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='128' height='128' filter='url(%23n)'/%3E%3C/svg%3E",
+  "method": "GET",
+  "kind": "Image",
+  "step": 1,
+  "fromCache": false,
+  "status": 200,
+  "mime": "image/svg+xml",
+  "start": 493,
+  "ms": 0,
+  "bytes": 0
+ },
+ {
+  "t": 493,
+  "type": "request",
+  "url": "https://busymate.ai/fonts/geist/geist-mono-latin.1735a36b.woff2",
+  "method": "GET",
+  "kind": "Font",
+  "step": 1,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-5b23c303bb6655e3-01",
+  "status": 200,
+  "mime": "font/woff2",
+  "fromCache": false,
+  "start": 493,
+  "ms": 87,
+  "bytes": 41777
+ },
+ {
+  "t": 493,
+  "type": "request",
+  "url": "https://busymate.ai/support/chat?channel=embed&bridge=busymate-ai-v1&instance=qs-rupddqfy&locale=en&quickstart=qs_rupddqfyshz46lkp5qc4xggo&preview=wordpress.demo.busymate.ai",
+  "method": "GET",
+  "kind": "Document",
+  "step": 1,
+  "status": 200,
+  "mime": "text/html",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=2.1"
+  },
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-8e1f737b10ae1248-01",
+  "start": 493,
+  "ms": 115,
+  "bytes": 19347
+ },
+ {
+  "t": 494,
+  "type": "request",
+  "url": "https://busymate.ai/api/quickstart/icon/qs_rupddqfyshz46lkp5qc4xggo",
+  "method": "GET",
+  "kind": "Image",
+  "step": 1,
+  "status": 200,
+  "mime": "image/png",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.3"
+  },
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-54fb3f39cf5478e6-01",
+  "start": 494,
+  "ms": 125,
+  "bytes": 3970
+ },
+ {
+  "t": 591,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/css/a046fed464fa4e7a.css",
+  "method": "GET",
+  "kind": "Stylesheet",
+  "step": 1,
+  "fromCache": false,
+  "status": 200,
+  "mime": "text/css",
+  "start": 591,
+  "ms": 0,
+  "bytes": 0
+ },
+ {
+  "t": 601,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/css/19226f581fa316ef.css",
+  "method": "GET",
+  "kind": "Stylesheet",
+  "step": 1,
+  "fromCache": false,
+  "status": 200,
+  "mime": "text/css",
+  "start": 601,
+  "ms": 0,
+  "bytes": 0
+ },
+ {
+  "t": 601,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/webpack-4c47e6f130cb06c6.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "fromCache": false,
+  "status": 200,
+  "mime": "application/javascript",
+  "start": 601,
+  "ms": 1,
+  "bytes": 0
+ },
+ {
+  "t": 601,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/css/435849bfa2a555d2.css",
+  "method": "GET",
+  "kind": "Stylesheet",
+  "step": 1,
+  "status": 200,
+  "mime": "text/css",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-cfe4b7684b6fb17e-01",
+  "start": 601,
+  "ms": 77,
+  "bytes": 838
+ },
+ {
+  "t": 601,
+  "type": "request",
+  "url": "https://busymate.ai/fonts/geist/geist-sans-latin.4971e7c0.woff2",
+  "method": "GET",
+  "kind": "Font",
+  "step": 1,
+  "status": 200,
+  "mime": "font/woff2",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-84859161c2bef7b2-01",
+  "start": 601,
+  "ms": 77,
+  "bytes": 40446
+ },
+ {
+  "t": 601,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/css/facd2bb6c96cdcf8.css",
+  "method": "GET",
+  "kind": "Stylesheet",
+  "step": 1,
+  "status": 200,
+  "mime": "text/css",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-a80a758a188b4fa9-01",
+  "start": 601,
+  "ms": 78,
+  "bytes": 37445
+ },
+ {
+  "t": 601,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/css/ef1a810fd6ec7229.css",
+  "method": "GET",
+  "kind": "Stylesheet",
+  "step": 1,
+  "status": 200,
+  "mime": "text/css",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-b12971c099db789a-01",
+  "start": 601,
+  "ms": 78,
+  "bytes": 4523
+ },
+ {
+  "t": 601,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/css/33818bcc012d9770.css",
+  "method": "GET",
+  "kind": "Stylesheet",
+  "step": 1,
+  "status": 200,
+  "mime": "text/css",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-ad648e42cbe159f8-01",
+  "start": 601,
+  "ms": 79,
+  "bytes": 2178
+ },
+ {
+  "t": 601,
+  "type": "request",
+  "url": "https://busymate.ai/appearance/base-06e623c6.css",
+  "method": "GET",
+  "kind": "Stylesheet",
+  "step": 1,
+  "status": 200,
+  "mime": "text/css",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-750c6557f403e80e-01",
+  "start": 601,
+  "ms": 79,
+  "bytes": 1318
+ },
+ {
+  "t": 602,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/main-app-d968fb068e6980e9.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "fromCache": false,
+  "status": 200,
+  "mime": "application/javascript",
+  "start": 602,
+  "ms": 0,
+  "bytes": 0
+ },
+ {
+  "t": 602,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/app/global-error-eceba8b7d37f0dee.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "fromCache": false,
+  "status": 200,
+  "mime": "application/javascript",
+  "start": 602,
+  "ms": 1,
+  "bytes": 0
+ },
+ {
+  "t": 602,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/71022-df156665b73afb32.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": true,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-5542d28a9925fcb4-01",
+  "start": 602,
+  "ms": 83,
+  "bytes": 0
+ },
+ {
+  "t": 602,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/3e9ec74f-6ce919f9a9b4add8.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": true,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-f8f40011bfff2bb7-01",
+  "start": 602,
+  "ms": 83,
+  "bytes": 0
+ },
+ {
+  "t": 602,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/layout-shared/app-356abf22f1b11ad0.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": true,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-143e6ff522dba8f9-01",
+  "start": 602,
+  "ms": 94,
+  "bytes": 0
+ },
+ {
+  "t": 602,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/app/support/loading-7832cf80850cd9fb.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-0198f57d5c25ed49-01",
+  "start": 602,
+  "ms": 134,
+  "bytes": 1963
+ },
+ {
+  "t": 603,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/14040-cb1ade644cb10a15.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "fromCache": false,
+  "status": 200,
+  "mime": "application/javascript",
+  "start": 603,
+  "ms": 0,
+  "bytes": 0
+ },
+ {
+  "t": 603,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/app/layout-c6de81a61154f7ba.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": true,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-8fb864a5741fdcd1-01",
+  "start": 603,
+  "ms": 93,
+  "bytes": 0
+ },
+ {
+  "t": 603,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/4135-f16ab98e38d95fcb.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": true,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-3066643436b4dea4-01",
+  "start": 603,
+  "ms": 93,
+  "bytes": 0
+ },
+ {
+  "t": 603,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/9936-9e69872e31530f16.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-8c6b4d0eeb1ac902-01",
+  "start": 603,
+  "ms": 135,
+  "bytes": 9264
+ },
+ {
+  "t": 603,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/48314-f4378574362fcb2e.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-ac42f9461f453a8d-01",
+  "start": 603,
+  "ms": 136,
+  "bytes": 8973
+ },
+ {
+  "t": 603,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/17274-4afaf5b256164576.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-5a9150a324ce6d64-01",
+  "start": 603,
+  "ms": 137,
+  "bytes": 6378
+ },
+ {
+  "t": 603,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/4755-f046e5af4c918ee3.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-ff5ea525963adbd3-01",
+  "start": 603,
+  "ms": 156,
+  "bytes": 7686
+ },
+ {
+  "t": 603,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/72960-3959696ec21d7a07.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-79982046dc45f5f6-01",
+  "start": 603,
+  "ms": 156,
+  "bytes": 12110
+ },
+ {
+  "t": 603,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/61169-ff8e1cfd0f5c3801.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-66ac2f8258cfbe65-01",
+  "start": 603,
+  "ms": 159,
+  "bytes": 33218
+ },
+ {
+  "t": 603,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/16388-445479538c67488d.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-2c2e973c5a8c1576-01",
+  "start": 603,
+  "ms": 163,
+  "bytes": 33171
+ },
+ {
+  "t": 603,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/76892-0a2a08216768b6f3.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-86ae7c8008e0e6c6-01",
+  "start": 603,
+  "ms": 163,
+  "bytes": 6121
+ },
+ {
+  "t": 604,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/30148-2952631d90712a83.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "fromCache": false,
+  "status": 200,
+  "mime": "application/javascript",
+  "start": 604,
+  "ms": 0,
+  "bytes": 0
+ },
+ {
+  "t": 604,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/5942-cbe50c9ab93f8161.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": true,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-bd9ee7eeefd1ea80-01",
+  "start": 604,
+  "ms": 93,
+  "bytes": 0
+ },
+ {
+  "t": 604,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/73827-54a537a8f51a69b3.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-355ad298d7d6dc8f-01",
+  "start": 604,
+  "ms": 143,
+  "bytes": 28514
+ },
+ {
+  "t": 604,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/11013-6f7863029d954da5.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-cc4c3e2aa7885434-01",
+  "start": 604,
+  "ms": 143,
+  "bytes": 5777
+ },
+ {
+  "t": 604,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/93685-05e057182da6aac8.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-7c09f905255666c3-01",
+  "start": 604,
+  "ms": 162,
+  "bytes": 4514
+ },
+ {
+  "t": 604,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/71456-806b5c30b5ecbc86.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-5647610f85dd8b9d-01",
+  "start": 604,
+  "ms": 163,
+  "bytes": 6058
+ },
+ {
+  "t": 604,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/13601-4b93568f7a5ad36b.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-b35b335bce1e24ef-01",
+  "start": 604,
+  "ms": 164,
+  "bytes": 15155
+ },
+ {
+  "t": 604,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/app/support/%5Bassistant%5D/page-734150a444b57439.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-cb8d10f9789dbeb9-01",
+  "start": 604,
+  "ms": 166,
+  "bytes": 1570
+ },
+ {
+  "t": 604,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/86912-c08b99548c1b0ae5.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-c856d1dafab3a6c3-01",
+  "start": 604,
+  "ms": 183,
+  "bytes": 99845
+ },
+ {
+  "t": 605,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/app/error-3e156494427e9196.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "fromCache": false,
+  "status": 200,
+  "mime": "application/javascript",
+  "start": 605,
+  "ms": 0,
+  "bytes": 0
+ },
+ {
+  "t": 605,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/app/not-found-0e356eb42577373b.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "fromCache": false,
+  "status": 200,
+  "mime": "application/javascript",
+  "start": 605,
+  "ms": 0,
+  "bytes": 0
+ },
+ {
+  "t": 605,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/18007-bea5c2467b77aa2f.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "fromCache": false,
+  "status": 200,
+  "mime": "application/javascript",
+  "start": 605,
+  "ms": 1,
+  "bytes": 0
+ },
+ {
+  "t": 605,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/90041.52bc3070748637e2.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-d28ae6d796ac54e5-01",
+  "start": 605,
+  "ms": 165,
+  "bytes": 448
+ },
+ {
+  "t": 605,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/93955.5987b773d25a3dd9.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-972a4cca53c9cf7a-01",
+  "start": 605,
+  "ms": 165,
+  "bytes": 382
+ },
+ {
+  "t": 606,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/3902-e15979bfe4b7ef17.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "fromCache": false,
+  "status": 200,
+  "mime": "application/javascript",
+  "start": 606,
+  "ms": 0,
+  "bytes": 0
+ },
+ {
+  "t": 606,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/37200-aad9d5016ea7c233.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": true,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-45ddae6769edf5e1-01",
+  "start": 606,
+  "ms": 91,
+  "bytes": 0
+ },
+ {
+  "t": 606,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/64959-a7167c727dbec15b.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-bf234d2cdbd0d1f4-01",
+  "start": 606,
+  "ms": 141,
+  "bytes": 4232
+ },
+ {
+  "t": 606,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/82475.7b51f8bfda79414a.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-5a4794e492a6fda3-01",
+  "start": 606,
+  "ms": 165,
+  "bytes": 7112
+ },
+ {
+  "t": 606,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/3d3b369f.96f79977afa716b9.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-502eda368a820bbe-01",
+  "start": 606,
+  "ms": 182,
+  "bytes": 12957
+ },
+ {
+  "t": 606,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/10195.7f7a348d46d6592c.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-0171dfc6e5b8c576-01",
+  "start": 606,
+  "ms": 200,
+  "bytes": 19819
+ },
+ {
+  "t": 606,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/5618.904a88d5c54c0efd.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-d05946951e5e858b-01",
+  "start": 606,
+  "ms": 200,
+  "bytes": 5387
+ },
+ {
+  "t": 606,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/86571.0c6b37d3b90e0a29.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-6af3f7423dded359-01",
+  "start": 606,
+  "ms": 201,
+  "bytes": 3302
+ },
+ {
+  "t": 607,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/33476.d5d7a738b6a7dfdc.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-956305c43b2451d7-01",
+  "start": 607,
+  "ms": 200,
+  "bytes": 5758
+ },
+ {
+  "t": 607,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/41249.ea08e79695bcfbd9.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-496d68d8927bfcea-01",
+  "start": 607,
+  "ms": 200,
+  "bytes": 2748
+ },
+ {
+  "t": 607,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/4479.9a762d4a1f86a348.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-f640ecb9546a42f3-01",
+  "start": 607,
+  "ms": 200,
+  "bytes": 30721
+ },
+ {
+  "t": 691,
+  "type": "request",
+  "url": "https://busymate.ai/fonts/geist/geist-mono-latin.1735a36b.woff2",
+  "method": "GET",
+  "kind": "Font",
+  "step": 1,
+  "fromCache": false,
+  "status": 200,
+  "mime": "font/woff2",
+  "start": 691,
+  "ms": 0,
+  "bytes": 0
+ },
+ {
+  "t": 722,
+  "type": "request",
+  "url": "https://busymate.ai/api/try-events",
+  "method": "POST",
+  "kind": "Fetch",
+  "step": 1,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-93652e788d436752-01",
+  "status": 200,
+  "mime": "application/json",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.4"
+  },
+  "start": 722,
+  "pending": true
+ },
+ {
+  "t": 722,
+  "type": "request",
+  "url": "https://busymate.ai/api/quickstart/deep/watch?host=wordpress.demo.busymate.ai",
+  "method": "GET",
+  "kind": "Fetch",
+  "step": 1,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-acea95c85d120a96-01",
+  "status": 200,
+  "mime": "text/event-stream",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.4"
+  },
+  "start": 722,
+  "pending": true
+ },
+ {
+  "t": 723,
+  "type": "request",
+  "url": "https://busymate.ai/api/try/agent-ready?site=wordpress.demo.busymate.ai&quickstart=qs_rupddqfyshz46lkp5qc4xggo",
+  "method": "GET",
+  "kind": "Fetch",
+  "step": 1,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-f9b2c7e3227cfc33-01",
+  "status": 200,
+  "mime": "application/json",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.3"
+  },
+  "start": 723,
+  "ms": 59,
+  "bytes": 6059
+ },
+ {
+  "t": 723,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/41834.af6f48da4d7e08d0.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-580d9bdeb4bd2ffe-01",
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "start": 723,
+  "ms": 84,
+  "bytes": 650
+ },
+ {
+  "t": 723,
+  "type": "request",
+  "url": "https://busymate.ai/api/quickstart/suggest?id=qs_rupddqfyshz46lkp5qc4xggo&lang=en",
+  "method": "GET",
+  "kind": "Fetch",
+  "step": 1,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-1bbe2ac6a152a3f5-01",
+  "status": 200,
+  "mime": "application/json",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.3"
+  },
+  "start": 723,
+  "ms": 87,
+  "bytes": 1681
+ },
+ {
+  "t": 723,
+  "type": "request",
+  "url": "https://busymate.ai/api/webmcp/inspect?site=wordpress.demo.busymate.ai",
+  "method": "GET",
+  "kind": "Fetch",
+  "step": 1,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-fe71fe50bd4924b3-01",
+  "status": 200,
+  "mime": "application/json",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.3"
+  },
+  "start": 723,
+  "ms": 261,
+  "bytes": 825
+ },
+ {
+  "t": 724,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0003,
+  "hadInput": false
+ },
+ {
+  "t": 724,
+  "type": "request",
+  "url": "https://busymate.ai/api/try/progress?host=wordpress.demo.busymate.ai",
+  "method": "GET",
+  "kind": "EventSource",
+  "step": 1,
+  "status": 200,
+  "mime": "text/event-stream",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.4"
+  },
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-0c8f819c7ae40cdb-01",
+  "start": 724,
+  "pending": true
+ },
+ {
+  "t": 725,
+  "type": "request",
+  "url": "https://busymate.ai/docs/getting-started?_rsc=GAi5bEPHw0HTGisY",
+  "method": "GET",
+  "kind": "Fetch",
+  "step": 1,
+  "status": 200,
+  "mime": "text/x-component",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.4"
+  },
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-d8e6cfb5ff44d16d-01",
+  "start": 725,
+  "ms": 51,
+  "bytes": 1069
+ },
+ {
+  "t": 725,
+  "type": "request",
+  "url": "https://busymate.ai/try/wordpress.demo.busymate.ai/live?_rsc=GAi5bEPHw0HTGisY",
+  "method": "GET",
+  "kind": "Fetch",
+  "step": 1,
+  "status": 200,
+  "mime": "text/x-component",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.4"
+  },
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-ecab04a449425149-01",
+  "start": 725,
+  "ms": 83,
+  "bytes": 1081
+ },
+ {
+  "t": 725,
+  "type": "request",
+  "url": "https://busymate.ai/ready/wordpress.demo.busymate.ai?_rsc=GAi5bEPHw0HTGisY",
+  "method": "GET",
+  "kind": "Fetch",
+  "step": 1,
+  "status": 200,
+  "mime": "text/x-component",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.7"
+  },
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-7b4254e6c3d924fb-01",
+  "start": 725,
+  "ms": 87,
+  "bytes": 1155
+ },
+ {
+  "t": 725,
+  "type": "request",
+  "url": "https://busymate.ai/try?_rsc=GAi5bEPHw0HTGisY",
+  "method": "GET",
+  "kind": "Fetch",
+  "step": 1,
+  "status": 200,
+  "mime": "text/html",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-2ac7fd9dff9e4c68-01",
+  "start": 725,
+  "ms": 108,
+  "bytes": 9443
+ },
+ {
+  "t": 788,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0002,
+  "hadInput": false
+ },
+ {
+  "t": 810,
+  "type": "request",
+  "url": "https://busymate.ai/api/i18n/bundle?l=en&ns=bb.login%2Cbb.marketing%2Cbb.shell%2Cbb.site%2Cbb.site.webmcp%2Cshared.common&d=1&k=bfec8b2c",
+  "method": "GET",
+  "kind": "Fetch",
+  "step": 1,
+  "status": 200,
+  "mime": "application/json",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.5"
+  },
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-3f7d24d4467d5a89-01",
+  "start": 810,
+  "ms": 58,
+  "bytes": 53018
+ },
+ {
+  "t": 816,
+  "type": "request",
+  "url": "https://busymate.ai/favicon.svg",
+  "method": "GET",
+  "kind": "Other",
+  "step": 1,
+  "status": 200,
+  "mime": "image/svg+xml",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-d4f41329fb373522-01",
+  "start": 816,
+  "ms": 52,
+  "bytes": 1061
+ },
+ {
+  "t": 819,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/24469.1ecd38c537d65cdf.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-b43b93c2b1868901-01",
+  "start": 819,
+  "ms": 51,
+  "bytes": 3324
+ },
+ {
+  "t": 826,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/40406.daca92322adde3bc.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-02f523db5a4290f1-01",
+  "start": 826,
+  "ms": 54,
+  "bytes": 9691
+ },
+ {
+  "t": 828,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/65853-2342b714b78747f0.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-0211e4f6ad8f2c94-01",
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "start": 828,
+  "ms": 50,
+  "bytes": 10423
+ },
+ {
+  "t": 828,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/73131.3bc602ab8219ed0a.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-268a3dfbebf90a6f-01",
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "start": 828,
+  "ms": 50,
+  "bytes": 2688
+ },
+ {
+  "t": 828,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/33507.ba2aadcd153e6aae.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-290ec3fe7cee1e51-01",
+  "start": 828,
+  "ms": 56,
+  "bytes": 597
+ },
+ {
+  "t": 832,
+  "type": "request",
+  "url": "https://busymate.ai/api/quickstart/scan/qs_rupddqfyshz46lkp5qc4xggo",
+  "method": "GET",
+  "kind": "Fetch",
+  "step": 1,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-34423c057fb25bc2-01",
+  "status": 200,
+  "mime": "application/json",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.4"
+  },
+  "start": 832,
+  "ms": 57,
+  "bytes": 5681
+ },
+ {
+  "t": 833,
+  "type": "request",
+  "url": "https://busymate.ai/api/quickstart/suggest?id=qs_rupddqfyshz46lkp5qc4xggo&lang=en",
+  "method": "GET",
+  "kind": "Fetch",
+  "step": 1,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-8dc1fd77162fac8c-01",
+  "status": 200,
+  "mime": "application/json",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.4"
+  },
+  "start": 833,
+  "ms": 54,
+  "bytes": 1682
+ },
+ {
+  "t": 884,
+  "type": "request",
+  "url": "https://api.busymate.ai/storage/v1/object/public/i18n/manifest.json",
+  "method": "GET",
+  "kind": "Fetch",
+  "step": 1,
+  "status": 200,
+  "mime": "application/json",
+  "fromCache": false,
+  "start": 884,
+  "ms": 274,
+  "bytes": 38612
+ },
+ {
+  "t": 887,
+  "type": "request",
+  "url": "https://busymate.ai/api/try-events",
+  "method": "POST",
+  "kind": "Fetch",
+  "step": 1,
+  "status": 200,
+  "mime": "application/json",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.4"
+  },
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-76120d3d3aa406f0-01",
+  "start": 887,
+  "pending": true
+ },
+ {
+  "t": 891,
+  "type": "request",
+  "url": "https://busymate.ai/api/quickstart/suggest?id=qs_rupddqfyshz46lkp5qc4xggo&lang=en",
+  "method": "GET",
+  "kind": "Fetch",
+  "step": 1,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-558b7e840875bea4-01",
+  "status": 200,
+  "mime": "application/json",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.3"
+  },
+  "start": 891,
+  "ms": 60,
+  "bytes": 1682
+ },
+ {
+  "t": 892,
+  "type": "request",
+  "url": "https://busymate.ai/api/quickstart/deep/watch?host=wordpress.demo.busymate.ai",
+  "method": "GET",
+  "kind": "Fetch",
+  "step": 1,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-e215d4bc586e67a4-01",
+  "status": 200,
+  "mime": "text/event-stream",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.4"
+  },
+  "start": 892,
+  "ms": 59,
+  "failed": "net::ERR_ABORTED"
+ },
+ {
+  "t": 946,
+  "type": "request",
+  "url": "https://busymate.ai/api/quickstart/suggest?id=qs_rupddqfyshz46lkp5qc4xggo&lang=en",
+  "method": "GET",
+  "kind": "Fetch",
+  "step": 1,
+  "status": 200,
+  "mime": "application/json",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.3"
+  },
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-972302233d401bb1-01",
+  "start": 946,
+  "ms": 64,
+  "bytes": 1681
+ },
+ {
+  "t": 946,
+  "type": "request",
+  "url": "https://busymate.ai/api/quickstart/suggest?id=qs_rupddqfyshz46lkp5qc4xggo&lang=en",
+  "method": "GET",
+  "kind": "Fetch",
+  "step": 1,
+  "status": 200,
+  "mime": "application/json",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.3"
+  },
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-67035017b04c7458-01",
+  "start": 946,
+  "ms": 123,
+  "bytes": 1682
+ },
+ {
+  "t": 1085,
+  "type": "request",
+  "url": "https://api.busymate.ai/functions/v1/support-launch?forceFunctionRegion=eu-west-1&assistant=chat",
+  "method": "POST",
+  "kind": "Fetch",
+  "step": 1,
+  "status": 201,
+  "mime": "application/json",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "ctx;dur=5.6;desc=\"miss\", gate;dur=0.0, mint;dur=4.8, total;dur=11.0"
+  },
+  "start": 1085,
+  "ms": 82,
+  "bytes": 600
+ },
+ {
+  "t": 1166,
+  "type": "request",
+  "url": "https://busymate.ai/api/i18n/bundle?l=en&ns=bb.marketing&p=bb.marketing.try.builder&k=8d8cdba5",
+  "method": "GET",
+  "kind": "Fetch",
+  "step": 1,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-590498697e9c69c1-01",
+  "status": 200,
+  "mime": "application/json",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.6"
+  },
+  "start": 1166,
+  "ms": 45,
+  "bytes": 5126
+ },
+ {
+  "t": 1166,
+  "type": "request",
+  "url": "https://busymate.ai/api/i18n/bundle?l=en&ns=shared.account&k=933ddb23",
+  "method": "GET",
+  "kind": "Fetch",
+  "step": 1,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-956e14ea9bdceb40-01",
+  "status": 200,
+  "mime": "application/json",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.5"
+  },
+  "start": 1166,
+  "ms": 51,
+  "bytes": 900
+ },
+ {
+  "t": 1166,
+  "type": "request",
+  "url": "https://busymate.ai/api/i18n/bundle?l=en&ns=auth.switcher%2Cbb.artifact%2Cbb.chat%2Cbb.chat.authorization%2Cbb.chat.brain%2Cbb.chat.confirm%2Cbb.chat.delegation%2Cbb.chat.form%2Cbb.chat.question%2Cbb.errors%2Cbb.login%2Cbb.shell%2Cbb.support%2Cbb.support.connectedAccounts%2Cbb.workflow%2Cshared.common&p=auth.switcher.addAccount%2Cauth.switcher.capReached%2Cauth.switcher.continueWithApple%2Cauth.switcher.continueWithGitHub%2Cauth.switcher.continueWithGoogle%2Cauth.switcher.currentAria%2Cauth.switcher.reauthNeeded%2Cauth.switcher.removeAccount%2Cauth.switcher.sectionLabel%2Cauth.switcher.switchTo%2Cauth.switcher.switching%2Cbb.artifact.chatCardKicker%2Cbb.artifact.chatCardOpen%2Cbb.artifact.openWindow%2Cbb.chat.activity%2Cbb.chat.addAttachment%2Cbb.chat.appFrameTitle%2Cbb.chat.appNavigatedAway%2Cbb.chat.assistantWorking%2Cbb.chat.attachErrorEmpty%2Cbb.chat.attachErrorSize%2Cbb.chat.attachErrorType%2Cbb.chat.attachErrorUpload%2Cbb.chat.attachKind%2Cbb.chat.attachPreview%2Cbb.chat.attachmentDownload%2Cbb.chat.attachmentOpen%2Cbb.chat.attachmentTileAria%2Cbb.chat.attachmentTileAriaFailed%2Cbb.chat.attachmentTileAriaUploading%2Cbb.chat.attachmentView%2Cbb.chat.authorization.connected%2Cbb.chat.authorization.failedWithReason%2Cbb.chat.authorization.notCompleted%2Cbb.chat.authorization.openSignInPage%2Cbb.chat.authorization.requiredAria%2Cbb.chat.authorization.signInTo%2Cbb.chat.authorization.verificationCode%2Cbb.chat.brain.artifactAlt%2Cbb.chat.brain.cancelledTool%2Cbb.chat.brain.plan%2Cbb.chat.brain.screenshot%2Cbb.chat.brain.usedTool%2Cbb.chat.branchVersionOf%2Cbb.chat.chapters%2Cbb.chat.chat%2Cbb.chat.composerAria%2Cbb.chat.composerPlaceholder%2Cbb.chat.confirm.approve%2Cbb.chat.confirm.approveAll%2Cbb.chat.confirm.approveAllAria%2Cbb.chat.confirm.aria%2Cbb.chat.confirm.cancel%2Cbb.chat.confirm.grantRevokeAria%2Cbb.chat.confirm.grantsLabel%2Cbb.chat.confirm.title%2Cbb.chat.copyAnswer%2Cbb.chat.copyCode%2Cbb.chat.delegation.connectBody%2Cbb.chat.delegation.connectCta%2Cbb.chat.delegation.connectTitle%2Cbb.chat.delegation.openAuthorizationPage%2Cbb.chat.delegation.reconnectBody%2Cbb.chat.delegation.reconnectCta%2Cbb.chat.delegation.reconnectTitle%2Cbb.chat.delegation.requiredAria%2Cbb.chat.delegation.startFailed%2Cbb.chat.delegation.waiting%2Cbb.chat.editComposer%2Cbb.chat.editMessage%2Cbb.chat.exportMarkdown%2Cbb.chat.form.invalid_email%2Cbb.chat.form.invalid_looks_like_code%2Cbb.chat.form.invalid_tel%2Cbb.chat.humanTakeoverNotice%2Cbb.chat.humanTakeoverPlaceholder%2Cbb.chat.justNow%2Cbb.chat.mcpApp%2Cbb.chat.moreActions%2Cbb.chat.nextBranch%2Cbb.chat.openingConversation%2Cbb.chat.persona%2Cbb.chat.previousBranch%2Cbb.chat.protocolNoise%2Cbb.chat.question.aria%2Cbb.chat.question.dismiss%2Cbb.chat.question.freeformPlaceholder%2Cbb.chat.question.ignored%2Cbb.chat.question.send%2Cbb.chat.question.sendFailed%2Cbb.chat.question.title%2Cbb.chat.rating%2Cbb.chat.refreshMessage%2Cbb.chat.removeFile%2Cbb.chat.scrollToBottom%2Cbb.chat.sendMessage%2Cbb.chat.slashMenuAria%2Cbb.chat.slashMenuPlaceholder%2Cbb.chat.slashTypeCommand%2Cbb.chat.slashTypePrompt%2Cbb.chat.slashTypeSkill%2Cbb.chat.stopGenerating%2Cbb.chat.suggestions%2Cbb.chat.toolGroup%2Cbb.chat.voice%2Cbb.chat.voiceInputStart%2Cbb.chat.voiceInputStartAria%2Cbb.chat.voiceInputStop&k=2308c86a",
+  "method": "GET",
+  "kind": "Fetch",
+  "step": 1,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-95c91d53d8ebfb9f-01",
+  "status": 200,
+  "mime": "application/json",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.6"
+  },
+  "start": 1166,
+  "ms": 52,
+  "bytes": 4067
+ },
+ {
+  "t": 1167,
+  "type": "request",
+  "url": "https://busymate.ai/api/i18n/bundle?l=en&ns=auth.switcher%2Cbb.artifact%2Cbb.chat%2Cbb.chat.authorization%2Cbb.chat.brain%2Cbb.chat.confirm%2Cbb.chat.delegation%2Cbb.chat.form%2Cbb.chat.question%2Cbb.errors%2Cbb.login%2Cbb.shell%2Cbb.support%2Cbb.support.connectedAccounts%2Cbb.workflow%2Cshared.common&p=bb.support.translation%2Cbb.workflow.hidePanel%2Cbb.workflow.showPanel%2Cshared.common.account%2Cshared.common.copied%2Cshared.common.copy%2Cshared.common.signOut&k=6e005c6e",
+  "method": "GET",
+  "kind": "Fetch",
+  "step": 1,
+  "status": 200,
+  "mime": "application/json",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.5"
+  },
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-d0af12c82585903a-01",
+  "start": 1167,
+  "ms": 51,
+  "bytes": 2214
+ },
+ {
+  "t": 1167,
+  "type": "request",
+  "url": "https://busymate.ai/api/i18n/bundle?l=en&ns=auth.switcher%2Cbb.artifact%2Cbb.chat%2Cbb.chat.authorization%2Cbb.chat.brain%2Cbb.chat.confirm%2Cbb.chat.delegation%2Cbb.chat.form%2Cbb.chat.question%2Cbb.errors%2Cbb.login%2Cbb.shell%2Cbb.support%2Cbb.support.connectedAccounts%2Cbb.workflow%2Cshared.common&p=bb.chat.voiceInputStopAria%2Cbb.chat.welcome%2Cbb.errors.backHome%2Cbb.errors.loadingChats%2Cbb.errors.offline%2Cbb.errors.reloadPage%2Cbb.errors.sessionRestarted%2Cbb.errors.sessionRestartedResending%2Cbb.errors.somethingWrongTitle%2Cbb.errors.toastChatsRefreshFailed%2Cbb.errors.tryAgain%2Cbb.errors.updateRefresh%2Cbb.errors.updatingTitle%2Cbb.login.signIn%2Cbb.shell.account%2Cbb.shell.accountMenu%2Cbb.shell.addToProject%2Cbb.shell.cancel%2Cbb.shell.chatActions%2Cbb.shell.chatTitle%2Cbb.shell.chats%2Cbb.shell.continueHere%2Cbb.shell.conversations%2Cbb.shell.copyLink%2Cbb.shell.deleteChatBody%2Cbb.shell.deleteChatTitle%2Cbb.shell.density%2Cbb.shell.densityComfortable%2Cbb.shell.densityCompact%2Cbb.shell.desktop%2Cbb.shell.environmentSandbox%2Cbb.shell.environmentSandboxDetail%2Cbb.shell.hidePreview%2Cbb.shell.hideSidebar%2Cbb.shell.loadingChats%2Cbb.shell.menuDelete%2Cbb.shell.menuRename%2Cbb.shell.modelAuto%2Cbb.shell.modelAutoDetail%2Cbb.shell.modelAutoNamed%2Cbb.shell.modelContext%2Cbb.shell.modelLoading%2Cbb.shell.modelMenuLabel%2Cbb.shell.modelUnavailable%2Cbb.shell.modelUnavailableNotConfigured%2Cbb.shell.modelUnavailableNotFunded%2Cbb.shell.modelUnavailableUsingAuto%2Cbb.shell.moreOptions%2Cbb.shell.navBack%2Cbb.shell.navBackHint%2Cbb.shell.navForward%2Cbb.shell.navForwardHint%2Cbb.shell.navGroup%2Cbb.shell.newChat%2Cbb.shell.newProject%2Cbb.shell.noMatches%2Cbb.shell.noProjectsShort%2Cbb.shell.openConversations%2Cbb.shell.otherWindowReplying%2Cbb.shell.projectName%2Cbb.shell.projectOptions%2Cbb.shell.projects%2Cbb.shell.projectsUnavailable%2Cbb.shell.recents%2Cbb.shell.removeFromProject%2Cbb.shell.renameChat%2Cbb.shell.searchChats%2Cbb.shell.share%2Cbb.shell.shareChatDescription%2Cbb.shell.shareChatTitle%2Cbb.shell.showMoreChats%2Cbb.shell.showPreview%2Cbb.shell.showSidebar%2Cbb.shell.signOutAll%2Cbb.shell.spotlightDescription%2Cbb.shell.spotlightNoChats%2Cbb.shell.spotlightNoMatches%2Cbb.shell.spotlightSearching%2Cbb.shell.spotlightTitle%2Cbb.shell.theme%2Cbb.shell.threadNotFoundBody%2Cbb.shell.threadNotFoundTitle%2Cbb.shell.threadStrandedBody%2Cbb.shell.threadStrandedTitle%2Cbb.shell.threads%2Cbb.shell.toastChatsRefreshFailed%2Cbb.shell.toastLinkCopied%2Cbb.shell.turnAttention%2Cbb.shell.turnRunning%2Cbb.shell.unread%2Cbb.shell.untitledChat%2Cbb.shell.viewAs%2Cbb.support.chat%2Cbb.support.connectedAccounts.cancel%2Cbb.support.connectedAccounts.confirmBody%2Cbb.support.connectedAccounts.confirmDisconnect%2Cbb.support.connectedAccounts.disconnect%2Cbb.support.connectedAccounts.disconnectFailed%2Cbb.support.connectedAccounts.empty%2Cbb.support.connectedAccounts.loadFailed%2Cbb.support.connectedAccounts.statusConnected%2Cbb.support.connectedAccounts.statusNotConnected%2Cbb.support.connectedAccounts.statusReconnect%2Cbb.support.connectedAccounts.subtitle%2Cbb.support.connectedAccounts.title%2Cbb.support.error%2Cbb.support.handoff%2Cbb.support.history%2Cbb.support.quickstart%2Cbb.support.suggestions%2Cbb.support.survey&k=5d1affc5",
+  "method": "GET",
+  "kind": "Fetch",
+  "step": 1,
+  "status": 200,
+  "mime": "application/json",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.8"
+  },
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-2075fa38cdb3ee2a-01",
+  "start": 1167,
+  "ms": 51,
+  "bytes": 8282
+ },
+ {
+  "t": 1167,
+  "type": "request",
+  "url": "https://busymate.ai/api/i18n/bundle?l=en&ns=bb.support&p=bb.support.resize&k=187e9a9d",
+  "method": "GET",
+  "kind": "Fetch",
+  "step": 1,
+  "status": 200,
+  "mime": "application/json",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.4"
+  },
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-53f5a217518e7573-01",
+  "start": 1167,
+  "ms": 52,
+  "bytes": 882
+ },
+ {
+  "t": 1176,
+  "type": "request",
+  "url": "https://busymate.ai/api/quickstart/icon/qs_rupddqfyshz46lkp5qc4xggo",
+  "method": "GET",
+  "kind": "Image",
+  "step": 1,
+  "status": 200,
+  "mime": "image/png",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.4"
+  },
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-d051884aba181480-01",
+  "start": 1176,
+  "ms": 54,
+  "bytes": 3970
+ },
+ {
+  "t": 1179,
+  "type": "request",
+  "url": "https://busymate.ai/api/suggestions/translate",
+  "method": "POST",
+  "kind": "Fetch",
+  "step": 1,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-25774eb62cdbf823-01",
+  "status": 200,
+  "mime": "application/json",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.3"
+  },
+  "start": 1179,
+  "ms": 58,
+  "bytes": 882
+ },
+ {
+  "t": 1179,
+  "type": "request",
+  "url": "https://busymate.ai/api/quickstart/bot-challenge?id=qs_rupddqfyshz46lkp5qc4xggo",
+  "method": "GET",
+  "kind": "Fetch",
+  "step": 1,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-70ad1aa9da6e6b17-01",
+  "status": 404,
+  "mime": "application/json",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.3"
+  },
+  "start": 1179,
+  "pending": true
+ },
+ {
+  "t": 1208,
+  "type": "request",
+  "url": "https://api.busymate.ai/functions/v1/tenant-visitor-token?forceFunctionRegion=eu-west-1",
+  "method": "POST",
+  "kind": "Fetch",
+  "step": 1,
+  "status": 200,
+  "mime": "application/json",
+  "fromCache": false,
+  "start": 1208,
+  "ms": 37,
+  "bytes": 1003
+ },
+ {
+  "t": 1208,
+  "type": "request",
+  "url": "https://busymate.ai/api/build",
+  "method": "GET",
+  "kind": "Fetch",
+  "step": 1,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-a556039d9ea0fd7f-01",
+  "status": 200,
+  "mime": "application/json",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.3"
+  },
+  "start": 1208,
+  "ms": 44,
+  "bytes": 745
+ },
+ {
+  "t": 1208,
+  "type": "request",
+  "url": "https://busymate.ai/api/i18n/bundle?l=en&ns=bb.shell%2Cbb.support&p=bb.shell.menuMarkUnread%2Cbb.shell.menuPin%2Cbb.support.helpdesk&k=4baeed6c",
+  "method": "GET",
+  "kind": "Fetch",
+  "step": 1,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-cde9301467404980-01",
+  "status": 200,
+  "mime": "application/json",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.5"
+  },
+  "start": 1208,
+  "ms": 54,
+  "bytes": 12280
+ },
+ {
+  "t": 1208,
+  "type": "request",
+  "url": "https://api.busymate.ai/functions/v1/support-intervention?forceFunctionRegion=eu-west-1",
+  "method": "POST",
+  "kind": "Fetch",
+  "step": 1,
+  "status": 200,
+  "mime": "application/json",
+  "fromCache": false,
+  "start": 1208,
+  "ms": 57,
+  "bytes": 301
+ },
+ {
+  "t": 1208,
+  "type": "request",
+  "url": "https://busymate.ai/api/voice/config",
+  "method": "GET",
+  "kind": "Fetch",
+  "step": 1,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-7d0fc5c444a03693-01",
+  "status": 200,
+  "mime": "application/json",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.3"
+  },
+  "start": 1208,
+  "ms": 65,
+  "bytes": 1120
+ },
+ {
+  "t": 1209,
+  "type": "console",
+  "level": "warning",
+  "text": "GoTrueClient@sb-api-auth-token:1 (2.110.8) 2026-11-22T19:58:11.910Z Multiple GoTrueClient instances detected in the same browser context. It is not an error, but this should be avoided as it may produce undefined behavior when used concurrently under the same storage key."
+ },
+ {
+  "t": 1228,
+  "type": "request",
+  "url": "https://busymate.ai/api/quickstart/scan/qs_rupddqfyshz46lkp5qc4xggo",
+  "method": "GET",
+  "kind": "Fetch",
+  "step": 1,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-e212dd11b2b5a26b-01",
+  "status": 200,
+  "mime": "application/json",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.3"
+  },
+  "start": 1228,
+  "ms": 52,
+  "bytes": 5681
+ },
+ {
+  "t": 1229,
+  "type": "request",
+  "url": "https://busymate.ai/api/quickstart/scan/qs_rupddqfyshz46lkp5qc4xggo",
+  "method": "GET",
+  "kind": "Fetch",
+  "step": 1,
+  "status": 200,
+  "mime": "application/json",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.4"
+  },
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-e54a5923f8648d42-01",
+  "start": 1229,
+  "ms": 107,
+  "bytes": 5681
+ },
+ {
+  "t": 1233,
+  "type": "log",
+  "level": "error",
+  "source": "network",
+  "text": "Failed to load resource: the server responded with a status of 404 ()",
+  "url": "https://busymate.ai/api/quickstart/bot-challenge?id=qs_rupddqfyshz46lkp5qc4xggo"
+ },
+ {
+  "t": 1245,
+  "type": "request",
+  "url": "https://api.busymate.ai/rest/v1/rpc/support_presence_visitor_context",
+  "method": "OPTIONS",
+  "kind": "Other",
+  "step": 1,
+  "status": 200,
+  "mime": "",
+  "fromCache": false,
+  "start": 1245,
+  "ms": 45,
+  "bytes": 0
+ },
+ {
+  "t": 1245,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/3044.958d3f167c7ccc9f.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 1,
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-c17f0a0eea995afa-01",
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "start": 1245,
+  "ms": 53,
+  "bytes": 16144
+ },
+ {
+  "t": 1245,
+  "type": "request",
+  "url": "https://api.busymate.ai/rest/v1/rpc/support_presence_visitor_context",
+  "method": "POST",
+  "kind": "Fetch",
+  "step": 1,
+  "status": 200,
+  "mime": "application/json",
+  "fromCache": false,
+  "start": 1245,
+  "ms": 122,
+  "bytes": 449
+ },
+ {
+  "t": 1246,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.039,
+  "hadInput": false
+ },
+ {
+  "t": 1266,
+  "type": "request",
+  "url": "https://busymate.ai/api/quickstart/scan/qs_rupddqfyshz46lkp5qc4xggo",
+  "method": "GET",
+  "kind": "Fetch",
+  "step": 1,
+  "status": 200,
+  "mime": "application/json",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.5"
+  },
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-58113fa63b7dd365-01",
+  "start": 1266,
+  "ms": 126,
+  "bytes": 5681
+ },
+ {
+  "t": 3180,
+  "type": "request",
+  "url": "https://busymate.ai/api/events",
+  "method": "POST",
+  "kind": "Ping",
+  "step": 1,
+  "status": 202,
+  "mime": "application/json",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.4"
+  },
+  "traceparent": "00-35e78e179c3afc7605adf4bf681974c0-5ee4ea7465bba540-01",
+  "start": 3180,
+  "ms": 72,
+  "bytes": 716
+ },
+ {
+  "t": 3764,
+  "type": "log",
+  "level": "warning",
+  "source": "javascript",
+  "text": "Deprecated API for given entry type."
+ },
+ {
+  "t": 3764,
+  "type": "action",
+  "n": 2,
+  "traceId": "f791baf3a2a1ef73217599c2ae25180c",
+  "step": "{\"say\":\"I run a small studio. I want to see what this mate would tell my customers.\",\"ms\":3000}"
+ },
+ {
+  "t": 3764,
+  "type": "caption",
+  "kind": "note",
+  "text": "I run a small studio. I want to see what this mate would tell my customers."
+ },
+ {
+  "t": 6769,
+  "type": "action",
+  "n": 3,
+  "traceId": "6e25be864ea5beda1e7719beb067a1ed",
+  "step": "{\"problem\":{\"id\":\"EX-01\",\"severity\":\"P2\",\"title\":\"On load the chat first said 'Hi, I'm your mate' with the Busymate logo, then switched to the studio\",\"steps\":\"Open the try page in a fresh browser\",\"e"
+ },
+ {
+  "t": 6769,
+  "type": "caption",
+  "kind": "problem",
+  "text": "P2 · On load the chat first said 'Hi, I'm your mate' with the Busymate logo, then switched to the studio"
+ },
+ {
+  "t": 6826,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/59225.9a6cd557bf434238.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 3,
+  "traceparent": "00-6e25be864ea5beda1e7719beb067a1ed-3e8ea32af1207fbf-01",
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "start": 6826,
+  "ms": 54,
+  "bytes": 779
+ },
+ {
+  "t": 6826,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/40978.b351e153182f55f0.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 3,
+  "traceparent": "00-6e25be864ea5beda1e7719beb067a1ed-3696494ff4de914b-01",
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "start": 6826,
+  "ms": 54,
+  "bytes": 2709
+ },
+ {
+  "t": 7128,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/45265.7eb45e3dcf7b584b.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 3,
+  "traceparent": "00-6e25be864ea5beda1e7719beb067a1ed-7550cb83cefe5e5c-01",
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "start": 7128,
+  "ms": 55,
+  "bytes": 5262
+ },
+ {
+  "t": 7129,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/91245.48ca7eb222a5f76d.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 3,
+  "traceparent": "00-6e25be864ea5beda1e7719beb067a1ed-ead5906d17ac5f58-01",
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "start": 7129,
+  "ms": 54,
+  "bytes": 1270
+ },
+ {
+  "t": 7129,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/63103.0fd2fc62514f5b24.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 3,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-6e25be864ea5beda1e7719beb067a1ed-dce1caeb4c54e5bf-01",
+  "start": 7129,
+  "ms": 92,
+  "bytes": 1370
+ },
+ {
+  "t": 7129,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/61660.9b19547752dfaef5.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 3,
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "traceparent": "00-6e25be864ea5beda1e7719beb067a1ed-ae09efd0c8bbef7e-01",
+  "start": 7129,
+  "ms": 93,
+  "bytes": 1753
+ },
+ {
+  "t": 7222,
+  "type": "request",
+  "url": "https://busymate.ai/api/webmcp/provider-catalog?surface=apex",
+  "method": "GET",
+  "kind": "Fetch",
+  "step": 3,
+  "status": 200,
+  "mime": "application/json",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.4"
+  },
+  "traceparent": "00-6e25be864ea5beda1e7719beb067a1ed-8b3d10c5c82c4254-01",
+  "start": 7222,
+  "ms": 55,
+  "bytes": 2318
+ },
+ {
+  "t": 10323,
+  "type": "action",
+  "n": 4,
+  "traceId": "4efd7285e1cd261dc6d8b2266cfcfeec",
+  "step": "{\"problem\":{\"id\":\"EX-02\",\"severity\":\"P2\",\"title\":\"Behind the scenes the page fetched the same suggestions 4 times and the same scan 4 times\",\"steps\":\"Open the try page; watch the network lane\",\"expect"
+ },
+ {
+  "t": 10323,
+  "type": "caption",
+  "kind": "problem",
+  "text": "P2 · Behind the scenes the page fetched the same suggestions 4 times and the same scan 4 times"
+ },
+ {
+  "t": 13874,
+  "type": "action",
+  "n": 5,
+  "traceId": "cce3845319827f923a92fd99057d96c4",
+  "step": "{\"clickAt\":[376,547]}"
+ },
+ {
+  "t": 13929,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 13934,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 13953,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 13956,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 13966,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 13976,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 13986,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 13996,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 14005,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 14015,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 14024,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 14034,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 14044,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 14057,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 14067,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 14076,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 14084,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 14094,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 14105,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 14114,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 14124,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 14134,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 14144,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 14157,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 14164,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 14173,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 14184,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 14194,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 14204,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 14214,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 14224,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 14233,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 14244,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 14254,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 14264,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0,
+  "hadInput": false
+ },
+ {
+  "t": 14496,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/43751-1d598c6252df2ae7.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 5,
+  "traceparent": "00-cce3845319827f923a92fd99057d96c4-86012af1ed144e4a-01",
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "start": 14496,
+  "ms": 52,
+  "bytes": 4014
+ },
+ {
+  "t": 14496,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/15250.9ab831b3da98d1c1.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 5,
+  "traceparent": "00-cce3845319827f923a92fd99057d96c4-8c2a2a6f2743e260-01",
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "start": 14496,
+  "ms": 55,
+  "bytes": 2846
+ },
+ {
+  "t": 14496,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/23859.4b6ac69239c3936d.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 5,
+  "traceparent": "00-cce3845319827f923a92fd99057d96c4-012fe0b0b3c6ba13-01",
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "start": 14496,
+  "ms": 59,
+  "bytes": 7997
+ },
+ {
+  "t": 14497,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/10714.b30fa2f23a3fd8cb.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 5,
+  "traceparent": "00-cce3845319827f923a92fd99057d96c4-4e754db1ee69d599-01",
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "start": 14497,
+  "ms": 60,
+  "bytes": 15089
+ },
+ {
+  "t": 14497,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/96863.1e49b165d799d8e3.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 5,
+  "traceparent": "00-cce3845319827f923a92fd99057d96c4-41e44ccdf428ae09-01",
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "start": 14497,
+  "ms": 61,
+  "bytes": 11037
+ },
+ {
+  "t": 14497,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/css/ffacb3b6719cc2cf.css",
+  "method": "GET",
+  "kind": "Stylesheet",
+  "step": 5,
+  "traceparent": "00-cce3845319827f923a92fd99057d96c4-269450254a40347a-01",
+  "status": 200,
+  "mime": "text/css",
+  "fromCache": false,
+  "start": 14497,
+  "ms": 62,
+  "bytes": 494
+ },
+ {
+  "t": 14497,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/17689.d46a6ec8bcc686f9.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 5,
+  "traceparent": "00-cce3845319827f923a92fd99057d96c4-a8a6004bb530cffb-01",
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "start": 14497,
+  "ms": 63,
+  "bytes": 5465
+ },
+ {
+  "t": 14497,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/97546-db0b58e2ae5051c0.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 5,
+  "traceparent": "00-cce3845319827f923a92fd99057d96c4-9a453f200d7900a5-01",
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "start": 14497,
+  "ms": 63,
+  "bytes": 10430
+ },
+ {
+  "t": 14497,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/4302.c69a4130feab2918.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 5,
+  "traceparent": "00-cce3845319827f923a92fd99057d96c4-b73a65b59ffffad1-01",
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "start": 14497,
+  "ms": 63,
+  "bytes": 5175
+ },
+ {
+  "t": 14497,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/17537-42572c5a3521dfca.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 5,
+  "traceparent": "00-cce3845319827f923a92fd99057d96c4-3cb13563f638dae2-01",
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "start": 14497,
+  "ms": 63,
+  "bytes": 23301
+ },
+ {
+  "t": 14651,
+  "type": "action",
+  "n": 6,
+  "traceId": "bef7d49657c998600daac8bc60075d83",
+  "step": "{\"keys\":\"Do you do kitchen renovations? What does a consult cost?\"}"
+ },
+ {
+  "t": 14665,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.039,
+  "hadInput": false
+ },
+ {
+  "t": 21087,
+  "type": "action",
+  "n": 7,
+  "traceId": "0c73e0ba08c552507a0a46923641227f",
+  "step": "{\"press\":\"Enter\"}"
+ },
+ {
+  "t": 21120,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/9656.b1d451f0a45c647e.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 7,
+  "traceparent": "00-0c73e0ba08c552507a0a46923641227f-8cc1dadc002e77c4-01",
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "start": 21120,
+  "ms": 49,
+  "bytes": 8250
+ },
+ {
+  "t": 21120,
+  "type": "request",
+  "url": "https://busymate.ai/api/agent/eve/v1/session?turnStream=0",
+  "method": "POST",
+  "kind": "Fetch",
+  "step": 7,
+  "traceparent": "00-0c73e0ba08c552507a0a46923641227f-e06c20a3267203dd-01",
+  "status": 200,
+  "mime": "application/x-ndjson",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "caller;dur=22, resume;dur=0, turn;dur=375, stream;dur=110"
+  },
+  "start": 21120,
+  "ms": 3760,
+  "failed": "net::ERR_ABORTED"
+ },
+ {
+  "t": 21121,
+  "type": "action",
+  "n": 8,
+  "traceId": "716f36947be72fddd28d86a590ee5601",
+  "step": "{\"say\":\"Waiting for the answer…\",\"ms\":2000}"
+ },
+ {
+  "t": 21121,
+  "type": "caption",
+  "kind": "note",
+  "text": "Waiting for the answer…"
+ },
+ {
+  "t": 21133,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.2396,
+  "hadInput": false
+ },
+ {
+  "t": 21690,
+  "type": "request",
+  "url": "https://busymate.ai/_next/static/chunks/68882.f9cc29f8c232d2c8.js",
+  "method": "GET",
+  "kind": "Script",
+  "step": 8,
+  "traceparent": "00-716f36947be72fddd28d86a590ee5601-c1aac69ffc3fb149-01",
+  "status": 200,
+  "mime": "application/javascript",
+  "fromCache": false,
+  "start": 21690,
+  "ms": 62,
+  "bytes": 1708
+ },
+ {
+  "t": 21690,
+  "type": "request",
+  "url": "https://busymate.ai/api/support-threads",
+  "method": "POST",
+  "kind": "Fetch",
+  "step": 8,
+  "traceparent": "00-716f36947be72fddd28d86a590ee5601-5b6a9299f97539a4-01",
+  "status": 200,
+  "mime": "application/json",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.5"
+  },
+  "start": 21690,
+  "ms": 87,
+  "bytes": 729
+ },
+ {
+  "t": 22750,
+  "type": "request",
+  "url": "https://busymate.ai/api/i18n/bundle?l=en&ns=bb.chat.brain&p=bb.chat.brain.checkedTool%2Cbb.chat.brain.toolStatusRunning&k=0d8ed1c2",
+  "method": "GET",
+  "kind": "Fetch",
+  "step": 8,
+  "status": 200,
+  "mime": "application/json",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.5"
+  },
+  "traceparent": "00-716f36947be72fddd28d86a590ee5601-3840618223957f56-01",
+  "start": 22750,
+  "ms": 49,
+  "bytes": 836
+ },
+ {
+  "t": 22769,
+  "type": "request",
+  "url": "https://busymate.ai/api/i18n/bundle?l=en&ns=bb.chat.brain&p=bb.chat.brain.toolStatusDone&k=844eb71e",
+  "method": "GET",
+  "kind": "Fetch",
+  "step": 8,
+  "status": 200,
+  "mime": "application/json",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.5"
+  },
+  "traceparent": "00-716f36947be72fddd28d86a590ee5601-2e21901bd405af1b-01",
+  "start": 22769,
+  "ms": 50,
+  "bytes": 808
+ },
+ {
+  "t": 23138,
+  "type": "action",
+  "n": 9,
+  "traceId": "e448f16b69e6a81e64d64263f3245d40",
+  "step": "{\"wait\":6000}"
+ },
+ {
+  "t": 23349,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0004,
+  "hadInput": false
+ },
+ {
+  "t": 23358,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0007,
+  "hadInput": false
+ },
+ {
+  "t": 23367,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0003,
+  "hadInput": false
+ },
+ {
+  "t": 23438,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0005,
+  "hadInput": false
+ },
+ {
+  "t": 23448,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0003,
+  "hadInput": false
+ },
+ {
+  "t": 23462,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0006,
+  "hadInput": false
+ },
+ {
+  "t": 23468,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0005,
+  "hadInput": false
+ },
+ {
+  "t": 23479,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.001,
+  "hadInput": false
+ },
+ {
+  "t": 23489,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0004,
+  "hadInput": false
+ },
+ {
+  "t": 23499,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0007,
+  "hadInput": false
+ },
+ {
+  "t": 23509,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0007,
+  "hadInput": false
+ },
+ {
+  "t": 23521,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.001,
+  "hadInput": false
+ },
+ {
+  "t": 23530,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0008,
+  "hadInput": false
+ },
+ {
+  "t": 23539,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0014,
+  "hadInput": false
+ },
+ {
+  "t": 23549,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0012,
+  "hadInput": false
+ },
+ {
+  "t": 23561,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.001,
+  "hadInput": false
+ },
+ {
+  "t": 23569,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0009,
+  "hadInput": false
+ },
+ {
+  "t": 23578,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0009,
+  "hadInput": false
+ },
+ {
+  "t": 23589,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0013,
+  "hadInput": false
+ },
+ {
+  "t": 23600,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0011,
+  "hadInput": false
+ },
+ {
+  "t": 23609,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.001,
+  "hadInput": false
+ },
+ {
+  "t": 23619,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0009,
+  "hadInput": false
+ },
+ {
+  "t": 23629,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0017,
+  "hadInput": false
+ },
+ {
+  "t": 23639,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0012,
+  "hadInput": false
+ },
+ {
+  "t": 23649,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.001,
+  "hadInput": false
+ },
+ {
+  "t": 23660,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0014,
+  "hadInput": false
+ },
+ {
+  "t": 23670,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0439,
+  "hadInput": false
+ },
+ {
+  "t": 23680,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0003,
+  "hadInput": false
+ },
+ {
+  "t": 23689,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.001,
+  "hadInput": false
+ },
+ {
+  "t": 23698,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0012,
+  "hadInput": false
+ },
+ {
+  "t": 23709,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0012,
+  "hadInput": false
+ },
+ {
+  "t": 23719,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0014,
+  "hadInput": false
+ },
+ {
+  "t": 23729,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0013,
+  "hadInput": false
+ },
+ {
+  "t": 23739,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0015,
+  "hadInput": false
+ },
+ {
+  "t": 23749,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0012,
+  "hadInput": false
+ },
+ {
+  "t": 23759,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0012,
+  "hadInput": false
+ },
+ {
+  "t": 23769,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0016,
+  "hadInput": false
+ },
+ {
+  "t": 23778,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0013,
+  "hadInput": false
+ },
+ {
+  "t": 23789,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0015,
+  "hadInput": false
+ },
+ {
+  "t": 23799,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0015,
+  "hadInput": false
+ },
+ {
+  "t": 23809,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0017,
+  "hadInput": false
+ },
+ {
+  "t": 23819,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0015,
+  "hadInput": false
+ },
+ {
+  "t": 23828,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0013,
+  "hadInput": false
+ },
+ {
+  "t": 23839,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0017,
+  "hadInput": false
+ },
+ {
+  "t": 23852,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0461,
+  "hadInput": false
+ },
+ {
+  "t": 23859,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0019,
+  "hadInput": false
+ },
+ {
+  "t": 23869,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0016,
+  "hadInput": false
+ },
+ {
+  "t": 23879,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0019,
+  "hadInput": false
+ },
+ {
+  "t": 23889,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0016,
+  "hadInput": false
+ },
+ {
+  "t": 23900,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0017,
+  "hadInput": false
+ },
+ {
+  "t": 23912,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0017,
+  "hadInput": false
+ },
+ {
+  "t": 23920,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0014,
+  "hadInput": false
+ },
+ {
+  "t": 23932,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0022,
+  "hadInput": false
+ },
+ {
+  "t": 23950,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.002,
+  "hadInput": false
+ },
+ {
+  "t": 23960,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0022,
+  "hadInput": false
+ },
+ {
+  "t": 23969,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0018,
+  "hadInput": false
+ },
+ {
+  "t": 23980,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0019,
+  "hadInput": false
+ },
+ {
+  "t": 24000,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0015,
+  "hadInput": false
+ },
+ {
+  "t": 24010,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0022,
+  "hadInput": false
+ },
+ {
+  "t": 24039,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0019,
+  "hadInput": false
+ },
+ {
+  "t": 24039,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0043,
+  "hadInput": false
+ },
+ {
+  "t": 24042,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0003,
+  "hadInput": false
+ },
+ {
+  "t": 24048,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0009,
+  "hadInput": false
+ },
+ {
+  "t": 24059,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0015,
+  "hadInput": false
+ },
+ {
+  "t": 24072,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.002,
+  "hadInput": false
+ },
+ {
+  "t": 24079,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0025,
+  "hadInput": false
+ },
+ {
+  "t": 24089,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0018,
+  "hadInput": false
+ },
+ {
+  "t": 24099,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0019,
+  "hadInput": false
+ },
+ {
+  "t": 24109,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0411,
+  "hadInput": false
+ },
+ {
+  "t": 24119,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0023,
+  "hadInput": false
+ },
+ {
+  "t": 24131,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0019,
+  "hadInput": false
+ },
+ {
+  "t": 24139,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.003,
+  "hadInput": false
+ },
+ {
+  "t": 24148,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0019,
+  "hadInput": false
+ },
+ {
+  "t": 24158,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0019,
+  "hadInput": false
+ },
+ {
+  "t": 24169,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0018,
+  "hadInput": false
+ },
+ {
+  "t": 24179,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0027,
+  "hadInput": false
+ },
+ {
+  "t": 24188,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0017,
+  "hadInput": false
+ },
+ {
+  "t": 24197,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0026,
+  "hadInput": false
+ },
+ {
+  "t": 24208,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.095,
+  "hadInput": false
+ },
+ {
+  "t": 24219,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0026,
+  "hadInput": false
+ },
+ {
+  "t": 24231,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0028,
+  "hadInput": false
+ },
+ {
+  "t": 24239,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0014,
+  "hadInput": false
+ },
+ {
+  "t": 24249,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0024,
+  "hadInput": false
+ },
+ {
+  "t": 24259,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0024,
+  "hadInput": false
+ },
+ {
+  "t": 24268,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.002,
+  "hadInput": false
+ },
+ {
+  "t": 24280,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0017,
+  "hadInput": false
+ },
+ {
+  "t": 24297,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0021,
+  "hadInput": false
+ },
+ {
+  "t": 24309,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0022,
+  "hadInput": false
+ },
+ {
+  "t": 24319,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0019,
+  "hadInput": false
+ },
+ {
+  "t": 24331,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0024,
+  "hadInput": false
+ },
+ {
+  "t": 24339,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.002,
+  "hadInput": false
+ },
+ {
+  "t": 24349,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.003,
+  "hadInput": false
+ },
+ {
+  "t": 24360,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0018,
+  "hadInput": false
+ },
+ {
+  "t": 24369,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0025,
+  "hadInput": false
+ },
+ {
+  "t": 24379,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0022,
+  "hadInput": false
+ },
+ {
+  "t": 24389,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.039,
+  "hadInput": false
+ },
+ {
+  "t": 24398,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0025,
+  "hadInput": false
+ },
+ {
+  "t": 24408,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.002,
+  "hadInput": false
+ },
+ {
+  "t": 24420,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0027,
+  "hadInput": false
+ },
+ {
+  "t": 24432,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0023,
+  "hadInput": false
+ },
+ {
+  "t": 24443,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0022,
+  "hadInput": false
+ },
+ {
+  "t": 24449,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0016,
+  "hadInput": false
+ },
+ {
+  "t": 24460,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0025,
+  "hadInput": false
+ },
+ {
+  "t": 24470,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0024,
+  "hadInput": false
+ },
+ {
+  "t": 24480,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0025,
+  "hadInput": false
+ },
+ {
+  "t": 24500,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0027,
+  "hadInput": false
+ },
+ {
+  "t": 24510,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0017,
+  "hadInput": false
+ },
+ {
+  "t": 24520,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0022,
+  "hadInput": false
+ },
+ {
+  "t": 24530,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0022,
+  "hadInput": false
+ },
+ {
+  "t": 24540,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0022,
+  "hadInput": false
+ },
+ {
+  "t": 24550,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0019,
+  "hadInput": false
+ },
+ {
+  "t": 24561,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0017,
+  "hadInput": false
+ },
+ {
+  "t": 24570,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0023,
+  "hadInput": false
+ },
+ {
+  "t": 24583,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0017,
+  "hadInput": false
+ },
+ {
+  "t": 24590,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0385,
+  "hadInput": false
+ },
+ {
+  "t": 24600,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0018,
+  "hadInput": false
+ },
+ {
+  "t": 24610,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0019,
+  "hadInput": false
+ },
+ {
+  "t": 24631,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0013,
+  "hadInput": false
+ },
+ {
+  "t": 24640,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.002,
+  "hadInput": false
+ },
+ {
+  "t": 24650,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0019,
+  "hadInput": false
+ },
+ {
+  "t": 24665,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.002,
+  "hadInput": false
+ },
+ {
+  "t": 24670,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0019,
+  "hadInput": false
+ },
+ {
+  "t": 24684,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0018,
+  "hadInput": false
+ },
+ {
+  "t": 24690,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0018,
+  "hadInput": false
+ },
+ {
+  "t": 24699,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0018,
+  "hadInput": false
+ },
+ {
+  "t": 24710,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0017,
+  "hadInput": false
+ },
+ {
+  "t": 24720,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0022,
+  "hadInput": false
+ },
+ {
+  "t": 24730,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0023,
+  "hadInput": false
+ },
+ {
+  "t": 24740,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0391,
+  "hadInput": false
+ },
+ {
+  "t": 24753,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0019,
+  "hadInput": false
+ },
+ {
+  "t": 24760,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0025,
+  "hadInput": false
+ },
+ {
+  "t": 24770,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0017,
+  "hadInput": false
+ },
+ {
+  "t": 24780,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.002,
+  "hadInput": false
+ },
+ {
+  "t": 24791,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.002,
+  "hadInput": false
+ },
+ {
+  "t": 24800,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0016,
+  "hadInput": false
+ },
+ {
+  "t": 24810,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0015,
+  "hadInput": false
+ },
+ {
+  "t": 24820,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0017,
+  "hadInput": false
+ },
+ {
+  "t": 24833,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0013,
+  "hadInput": false
+ },
+ {
+  "t": 24840,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0014,
+  "hadInput": false
+ },
+ {
+  "t": 24850,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0012,
+  "hadInput": false
+ },
+ {
+  "t": 24860,
+  "type": "request",
+  "url": "https://busymate.ai/api/quickstart/sources",
+  "method": "POST",
+  "kind": "Fetch",
+  "step": 9,
+  "status": 200,
+  "mime": "application/json",
+  "fromCache": false,
+  "ids": {
+   "server-timing": "mw;dur=0.4"
+  },
+  "traceparent": "00-e448f16b69e6a81e64d64263f3245d40-4d4761c191b259da-01",
+  "start": 24860,
+  "ms": 61,
+  "bytes": 799
+ },
+ {
+  "t": 24873,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0014,
+  "hadInput": false
+ },
+ {
+  "t": 24880,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0546,
+  "hadInput": false
+ },
+ {
+  "t": 24880,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0021,
+  "hadInput": false
+ },
+ {
+  "t": 24890,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0003,
+  "hadInput": false
+ },
+ {
+  "t": 24900,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0007,
+  "hadInput": false
+ },
+ {
+  "t": 24911,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0013,
+  "hadInput": false
+ },
+ {
+  "t": 24921,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0008,
+  "hadInput": false
+ },
+ {
+  "t": 24930,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0011,
+  "hadInput": false
+ },
+ {
+  "t": 24940,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0004,
+  "hadInput": false
+ },
+ {
+  "t": 24950,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0012,
+  "hadInput": false
+ },
+ {
+  "t": 24960,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.001,
+  "hadInput": false
+ },
+ {
+  "t": 24970,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0004,
+  "hadInput": false
+ },
+ {
+  "t": 24980,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.001,
+  "hadInput": false
+ },
+ {
+  "t": 24990,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0013,
+  "hadInput": false
+ },
+ {
+  "t": 25000,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0007,
+  "hadInput": false
+ },
+ {
+  "t": 25010,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0003,
+  "hadInput": false
+ },
+ {
+  "t": 25020,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0007,
+  "hadInput": false
+ },
+ {
+  "t": 25031,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.001,
+  "hadInput": false
+ },
+ {
+  "t": 25041,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0007,
+  "hadInput": false
+ },
+ {
+  "t": 25053,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0005,
+  "hadInput": false
+ },
+ {
+  "t": 25060,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0007,
+  "hadInput": false
+ },
+ {
+  "t": 25071,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0002,
+  "hadInput": false
+ },
+ {
+  "t": 25080,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0011,
+  "hadInput": false
+ },
+ {
+  "t": 25090,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0001,
+  "hadInput": false
+ },
+ {
+  "t": 25100,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0007,
+  "hadInput": false
+ },
+ {
+  "t": 25111,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0005,
+  "hadInput": false
+ },
+ {
+  "t": 25120,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0007,
+  "hadInput": false
+ },
+ {
+  "t": 25130,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0005,
+  "hadInput": false
+ },
+ {
+  "t": 25144,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0007,
+  "hadInput": false
+ },
+ {
+  "t": 25150,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0005,
+  "hadInput": false
+ },
+ {
+  "t": 25164,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0338,
+  "hadInput": false
+ },
+ {
+  "t": 25170,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0002,
+  "hadInput": false
+ },
+ {
+  "t": 25180,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0003,
+  "hadInput": false
+ },
+ {
+  "t": 25191,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0003,
+  "hadInput": false
+ },
+ {
+  "t": 25200,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0003,
+  "hadInput": false
+ },
+ {
+  "t": 25210,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0006,
+  "hadInput": false
+ },
+ {
+  "t": 25220,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0003,
+  "hadInput": false
+ },
+ {
+  "t": 25231,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0004,
+  "hadInput": false
+ },
+ {
+  "t": 25243,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0003,
+  "hadInput": false
+ },
+ {
+  "t": 25250,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0003,
+  "hadInput": false
+ },
+ {
+  "t": 25260,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0003,
+  "hadInput": false
+ },
+ {
+  "t": 25272,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0005,
+  "hadInput": false
+ },
+ {
+  "t": 25280,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0002,
+  "hadInput": false
+ },
+ {
+  "t": 25290,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0005,
+  "hadInput": false
+ },
+ {
+  "t": 25300,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0003,
+  "hadInput": false
+ },
+ {
+  "t": 25310,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0005,
+  "hadInput": false
+ },
+ {
+  "t": 25320,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0003,
+  "hadInput": false
+ },
+ {
+  "t": 25330,
+  "type": "perf",
+  "kind": "layout-shift",
+  "value": 0.0002,
+  "hadInput": false
+ },
+ {
+  "t": 29140,
+  "type": "action",
+  "n": 10,
+  "traceId": "c0e44f69dab9b6f61af655741de8464f",
+  "step": "{\"problem\":{\"id\":\"EX-03\",\"severity\":\"P2\",\"title\":\"Every visit logs a red 404 in the console: the bot check answers 404 when there is nothing to check\",\"steps\":\"Open the try page with DevTools console "
+ },
+ {
+  "t": 29140,
+  "type": "caption",
+  "kind": "problem",
+  "text": "P2 · Every visit logs a red 404 in the console: the bot check answers 404 when there is nothing to check"
+ },
+ {
+  "t": 32711,
+  "type": "action",
+  "n": 11,
+  "traceId": "23c7d9af86aef0733bfe72f84e317cb1",
+  "step": "{\"wait\":1000}"
+ }
+]
